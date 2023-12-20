@@ -1,0 +1,89 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 32px 0;
+    background-color: transparent;
+    z-index: 1000;
+    transition: all 0.2s ease-in-out;
+    &.sticky {
+        padding: 24px 0;
+        background-color: #145062;
+        .logo-img {
+            width: 69px;
+        }
+    }
+
+    &-search {
+        max-width: 200px;
+        background-color: rgba(253, 253, 253, 0.5);
+        border-radius: 999px;
+        border: 1px solid #145062;
+        position: relative;
+
+        &__form {
+            width: 100%;
+            height: 100%;
+        }
+        &__input {
+            padding: 10px 40px 10px 20px;
+            height: 39px;
+            width: 100%;
+            line-height: 1;
+            color: #fdfdfd;
+            &::-ms-input-placeholder {
+                color: #fdfdfd;
+                font-weight: 400;
+                font-size: 15px;
+            }
+
+            &::placeholder {
+                color: #fdfdfd;
+                font-weight: 400;
+                font-size: 15px;
+            }
+        }
+        &__btn {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            img {
+                width: 12px;
+            }
+        }
+    }
+}
+.logo {
+    &-img {
+        width: 127px;
+        transition: all 0.2s ease-in-out;
+    }
+}
+
+.navbar {
+    padding-left: 87px;
+    padding-right: 55px;
+
+    &-link {
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 26px;
+            height: 2px;
+            background-color: #b29966;
+            border-radius: 999px;
+            bottom: -7px;
+        }
+    }
+}
+
+.language {
+    padding-left: 58px;
+    &-select {
+        width: 120px;
+    }
+}

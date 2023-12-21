@@ -1,0 +1,22 @@
+.footer {
+    &-top {
+        padding: 100px 0;
+        &__bg {
+            position: absolute;
+            inset: 0;
+            opacity: 0.2;
+            width: 100%;
+            height: 100%;
+        }
+
+        &__container {
+            display: flex;
+            gap: 172px;
+        }
+        &__right {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 60px;
+        }
+    }
+}

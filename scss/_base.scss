@@ -25,10 +25,6 @@ body {
     line-height: 1.5;
     color: #1f1f1f;
     background-color: #fdfdfd;
-
-    &.hidden {
-        overflow: hidden;
-    }
 }
 
 input,
@@ -1093,4 +1089,10 @@ img {
 }
 .overflow-hidden {
     overflow: hidden;
+}
+.hidden {
+    display: none;
+    &.active {
+        display: block;
+    }
 }

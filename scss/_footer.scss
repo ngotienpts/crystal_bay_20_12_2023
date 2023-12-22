@@ -1,6 +1,6 @@
 .footer {
     &-top {
-        padding: 100px 0;
+        padding: 100px 0 180px 0;
         &__bg {
             position: absolute;
             inset: 0;
@@ -17,6 +17,51 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-gap: 60px;
+        }
+
+        &__rightItem {
+            .title {
+                min-height: 120px;
+                margin-bottom: 24px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+            }
+            .content {
+                margin-bottom: 12px;
+            }
+            .content-img {
+                flex-shrink: 0;
+                width: 20px;
+            }
+            .content-text {
+                font-size: 15px;
+                margin-bottom: 5px;
+            }
+        }
+
+        &__wave {
+            position: absolute;
+            bottom: -40px;
+            left: 0;
+            right: 0;
+            z-index: -1;
+        }
+    }
+
+    &-bot {
+        padding: 50px 0;
+        color: rgba($color: #fff, $alpha: 0.5);
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                to right,
+                rgba(31, 31, 31, 0.4),
+                transparent
+            );
+            z-index: -1;
         }
     }
 }

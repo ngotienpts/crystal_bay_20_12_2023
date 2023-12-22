@@ -1,0 +1,65 @@
+.main-bgLogo {
+    position: absolute;
+    top: 204px;
+    right: 0;
+    width: 1285px;
+    opacity: 0.09;
+    z-index: 1;
+    user-select: none;
+}
+.intro-primary {
+    padding-top: 204px;
+    padding-bottom: 48px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background: var(
+        --Gradient,
+        linear-gradient(95deg, #145062 0%, #4696ae 100%)
+    );
+
+    &__line {
+        width: 26px;
+        height: 2px;
+        border-radius: 2px;
+        background-color: #b29966;
+        display: inline-block;
+    }
+    &__text1 {
+        display: inline-block;
+        margin-left: 10px;
+    }
+    &__title {
+        font-size: 50px;
+        margin-bottom: 98px;
+    }
+    &__prev {
+        width: 70px;
+        height: 70px;
+        border: 1px solid #b29966;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            height: 24px;
+        }
+    }
+    &__next {
+        width: 70px;
+        height: 70px;
+        border: 1px solid #b29966;
+        background-color: #145062;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            height: 24px;
+        }
+    }
+}
+
+.intro-secondary {
+    padding: 67px 0;
+}

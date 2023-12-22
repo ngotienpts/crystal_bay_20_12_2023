@@ -1321,6 +1321,10 @@ img {
   font-style: italic;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 /*=================================================================*/
 .items-center {
   align-items: center;

@@ -1087,6 +1087,15 @@ img {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.text-gradient-tertiary {
+    background: var(
+        --Gradient,
+        linear-gradient(95deg, #145062 0%, #4696ae 100%)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .text-underline {
     text-decoration: underline;
 }

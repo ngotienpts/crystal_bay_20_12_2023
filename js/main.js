@@ -23,6 +23,8 @@ document.addEventListener("DOMContentLoaded", function () {
     var galleryVideos = document.querySelectorAll(
         ".js__swiperGalleryContainerVideo"
     );
+    var oneSlides = document.querySelectorAll(".js__swiperOneContainer");
+    var fiveSlides = document.querySelectorAll(".js__swiperFiveContainer");
 
     function switchTab(tabId, idOne, idTwo) {
         document.getElementById(tabId).classList.add("active");
@@ -83,6 +85,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // });
         },
+        // slider one
+        sliderOneItems: function () {
+            oneSlides.forEach((item) => {
+                var slider = item.querySelector(".js__swiperOnes");
+                var next = item.querySelector(".swiper-button-next");
+                var prev = item.querySelector(".swiper-button-prev");
+                new Swiper(slider, {
+                    slidesPerView: 1,
+                    spaceBetween: 18,
+                    slidesPerGroup: 1,
+                    navigation: {
+                        nextEl: next || null,
+                        prevEl: prev || null,
+                    },
+                });
+            });
+        },
         // slider three point five
         sliderThreePointFiveItems: function () {
             threePointFiveSlides.forEach((item) => {
@@ -110,6 +129,37 @@ document.addEventListener("DOMContentLoaded", function () {
                         },
                         1200: {
                             slidesPerView: 3.5,
+                        },
+                    },
+                });
+            });
+        },
+        // slider five
+        sliderFiveItems: function () {
+            fiveSlides.forEach((item) => {
+                var slider = item.querySelector(".js__swiperFives");
+                var next = item.querySelector(".swiper-button-next");
+                var prev = item.querySelector(".swiper-button-prev");
+                new Swiper(slider, {
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+                    slidesPerGroup: 1,
+                    navigation: {
+                        nextEl: next || null,
+                        prevEl: prev || null,
+                    },
+                    breakpoints: {
+                        768: {
+                            slidesPerView: 3,
+                            spaceBetween: 30,
+                        },
+                        1024: {
+                            slidesPerView: 4,
+                            spaceBetween: 50,
+                        },
+                        1200: {
+                            slidesPerView: 5,
+                            spaceBetween: 70,
                         },
                     },
                 });
@@ -262,8 +312,12 @@ document.addEventListener("DOMContentLoaded", function () {
         start: function () {
             // su ly cac su kien
             this.handleEvent();
+            // slider one
+            this.sliderOneItems();
             // slider three point five
             this.sliderThreePointFiveItems();
+            // slider five
+            this.sliderFiveItems();
             // slider auto
             this.sliderAutoItems();
             // slider gallery picture

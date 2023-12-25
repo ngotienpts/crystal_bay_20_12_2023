@@ -211,12 +211,38 @@
     right: auto;
   }
 
+  /*------------------------------------------------------------- member*/
+  .member-primary {
+    padding: 67px 20px;
+  }
+
   /*------------------------------------------------------------- news*/
   .news-primary {
     padding: 67px 20px;
   }
 
   /*------------------------------------------------------------- detail*/
+  .detail-primary {
+    padding: 67px 20px;
+  }
+
+  .news-other {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .news-other .swiper-button-prev,
+.news-other .swiper-rtl .swiper-button-next {
+    left: 0;
+  }
+  .news-other .swiper-button-next,
+.news-other .swiper-rtl .swiper-button-prev {
+    right: 0;
+  }
+  .news-other__slide {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
   /*------------------------------------------------------------- footer*/
   .footer-top {
     padding: 80px 20px 100px;
@@ -478,7 +504,7 @@
   /*------------------------------------------------------------- cate*/
   /*------------------------------------------------------------- intro*/
   .intro-primary {
-    padding: 150px 20px 20px;
+    padding: 120px 20px 20px;
   }
   .intro-primary__title {
     margin-bottom: 20px;
@@ -587,7 +613,43 @@
     margin-top: 10px;
   }
 
+  /*------------------------------------------------------------- member*/
+  .member-primary {
+    padding: 56px 15px;
+  }
+  .member-primary__tabItem {
+    font-size: 12px;
+  }
+
+  .table-primary .table-colum {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+
   /*------------------------------------------------------------- detail*/
+  .detail-primary {
+    padding: 56px 15px;
+  }
+  .detail-primary .detail-title {
+    font-size: 32px;
+  }
+
+  .news-other__slide {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 30px;
+  }
+  .news-other__slide .swiper-button-prev,
+.news-other__slide .swiper-rtl .swiper-button-next {
+    left: -10px;
+  }
+  .news-other__slide .swiper-button-next,
+.news-other__slide .swiper-rtl .swiper-button-prev {
+    right: -10px;
+  }
+
   /*------------------------------------------------------------- footer*/
   .footer-top {
     padding: 40px 15px;

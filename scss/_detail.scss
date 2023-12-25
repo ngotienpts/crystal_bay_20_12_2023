@@ -1,0 +1,98 @@
+.detail-primary {
+    padding: 67px 0;
+    .detail-timePublic {
+        opacity: 0.5;
+    }
+    .detail-content {
+        figure img {
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        figure figcaption {
+            background: #fff;
+            text-align: center;
+            margin: 0.9375rem auto;
+            display: block;
+            max-width: 100%;
+            line-height: 27px;
+            font-size: 15px;
+            color: #555;
+            em {
+                font-style: italic;
+            }
+            strong {
+                font-weight: bold;
+            }
+        }
+        em {
+            font-style: italic;
+        }
+        blockquote {
+            border: 2px solid gray;
+            border-collapse: separate;
+            .expEdit {
+                margin: 2px;
+                border: 1px solid gray;
+            }
+        }
+        & > p {
+            margin: 20px 0;
+            font-size: 15px;
+        }
+        & > h2 {
+            display: block;
+            font-size: 22px;
+            font-weight: 700;
+        }
+        & > h3 {
+            display: block;
+            font-size: 17px;
+            font-weight: 700;
+        }
+        & > h4,
+        h5,
+        h6 {
+            display: block;
+            font-size: 15px;
+            font-weight: 700;
+        }
+        & a {
+            color: #145062;
+        }
+        ul {
+            margin: 15px 0;
+            padding-left: 40px;
+            li {
+                list-style: disc;
+            }
+        }
+    }
+    &__action {
+        margin-top: 50px;
+    }
+    &__actionText {
+        gap: 15px;
+        margin-right: 15px;
+    }
+    &__actionList {
+        gap: 12px;
+    }
+}
+
+.news-other {
+    &__slide {
+        margin-top: 50px;
+    }
+    .swiper-button-next,
+    .swiper-rtl .swiper-button-prev {
+        right: -120px;
+        left: auto;
+        top: 30%;
+    }
+    .swiper-button-prev,
+    .swiper-rtl .swiper-button-next {
+        left: -120px;
+        right: auto;
+        top: 30%;
+    }
+}

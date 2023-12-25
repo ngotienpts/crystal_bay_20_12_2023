@@ -8,6 +8,9 @@ document.addEventListener("DOMContentLoaded", function () {
     // change tab
     const tabOne = document.getElementById("tab-1");
     const tabTwo = document.getElementById("tab-2");
+    const tabThree = document.getElementById("tab-3");
+    const tabFor = document.getElementById("tab-4");
+    const tabFive = document.getElementById("tab-5");
 
     // sub menu
     const subMenus = document.querySelectorAll(".js__subMenuContainer");
@@ -24,24 +27,40 @@ document.addEventListener("DOMContentLoaded", function () {
         ".js__swiperGalleryContainerVideo"
     );
     var oneSlides = document.querySelectorAll(".js__swiperOneContainer");
+    var threeSlides = document.querySelectorAll(".js__swiperThreeContainer");
     var fiveSlides = document.querySelectorAll(".js__swiperFiveContainer");
 
-    function switchTab(tabId, idOne, idTwo) {
-        document.getElementById(tabId).classList.add("active");
+    function switchTab(tabId, ...otherTabIds) {
         document
-            .getElementById(tabId === idOne ? idTwo : idOne)
-            .classList.remove("active");
+            .querySelectorAll("[id^='tab-']")
+            .forEach((tab) => tab.classList.remove("active"));
+        document
+            .querySelectorAll("[id^='pane-']")
+            .forEach((pane) => pane.classList.remove("active"));
 
-        document
-            .getElementById("pane-" + tabId.split("-")[1])
-            .classList.add("active");
-        document
-            .getElementById(
-                "pane-" + tabId.split("-")[1] === "pane-" + idOne.split("-")[1]
-                    ? "pane-" + idTwo.split("-")[1]
-                    : "pane-" + idOne.split("-")[1]
-            )
-            .classList.remove("active");
+        const currentTab = document.getElementById(tabId);
+        currentTab.classList.add("active");
+
+        const tabIndex = Array.from(
+            document.querySelectorAll("[id^='tab-']")
+        ).indexOf(currentTab);
+
+        const currentPane =
+            document.querySelectorAll("[id^='pane-']")[tabIndex];
+        currentPane.classList.add("active");
+
+        const otherTabIdsArray = otherTabIds.map(
+            (id) => "tab-" + id.split("-")[1]
+        );
+
+        document.querySelectorAll("[id^='tab-']").forEach((tab) => {
+            if (otherTabIdsArray.includes(tab.id)) {
+                tab.classList.remove("active");
+                document
+                    .getElementById("pane-" + tab.id.split("-")[1])
+                    .classList.remove("active");
+            }
+        });
     }
 
     const app = {
@@ -52,12 +71,27 @@ document.addEventListener("DOMContentLoaded", function () {
             // change tab
             if (tabOne) {
                 tabOne.onclick = function () {
-                    switchTab("tab-1", "tab-1", "tab-2");
+                    switchTab("tab-1", "tab-2");
                 };
             }
             if (tabTwo) {
                 tabTwo.onclick = function () {
-                    switchTab("tab-2", "tab-2", "tab-1");
+                    switchTab("tab-2", "tab-1");
+                };
+            }
+            if (tabThree) {
+                tabThree.onclick = function () {
+                    switchTab("tab-3", "tab-4", "tab-5");
+                };
+            }
+            if (tabFor) {
+                tabFor.onclick = function () {
+                    switchTab("tab-4", "tab-5", "tab-3");
+                };
+            }
+            if (tabFive) {
+                tabFive.onclick = function () {
+                    switchTab("tab-5", "tab-4", "tab-3");
                 };
             }
 
@@ -98,6 +132,37 @@ document.addEventListener("DOMContentLoaded", function () {
                     navigation: {
                         nextEl: next || null,
                         prevEl: prev || null,
+                    },
+                });
+            });
+        },
+        // slider three
+        sliderThreeItems: function () {
+            threeSlides.forEach((item) => {
+                var slider = item.querySelector(".js__swiperThrees");
+                var next = item.querySelector(".swiper-button-next");
+                var prev = item.querySelector(".swiper-button-prev");
+                new Swiper(slider, {
+                    slidesPerView: 1.5,
+                    spaceBetween: 10,
+                    slidesPerGroup: 1,
+                    navigation: {
+                        nextEl: next || null,
+                        prevEl: prev || null,
+                    },
+                    breakpoints: {
+                        768: {
+                            slidesPerView: 2,
+                            spaceBetween: 20,
+                        },
+                        1024: {
+                            slidesPerView: 3,
+                            spaceBetween: 20,
+                        },
+                        1200: {
+                            slidesPerView: 3,
+                            spaceBetween: 30,
+                        },
                     },
                 });
             });
@@ -314,6 +379,8 @@ document.addEventListener("DOMContentLoaded", function () {
             this.handleEvent();
             // slider one
             this.sliderOneItems();
+            // slider three
+            this.sliderThreeItems();
             // slider three point five
             this.sliderThreePointFiveItems();
             // slider five

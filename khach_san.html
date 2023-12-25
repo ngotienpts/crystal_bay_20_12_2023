@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="./images/favicon/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./images/favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./images/favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./images/favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./images/favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./images/favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./images/favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./images/favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./images/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./images/favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./images/favicon/favicon-16x16.png"
+        />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="./images/favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
+        <!-- end favicon -->
+        <title>CRYSTALBAY</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./lib/swiper/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/responsive.css" />
+        <script src="./lib/jquery/jquery.js"></script>
+    </head>
+
+    <body>
+       
+        <!-- header -->
+        <header id="header" class="header relative js__header">
+            <!-- pc -->
+            <div class="header-pc w-wrapper d-2xl-flex d-lg-none items-center justify-between">
+                <!-- logo -->
+                <div class="logo flex-0">
+                    <a href="#" class="logo-link">
+                        <img src="./images/icon/logo.svg" class="logo-img" alt="">
+                    </a>
+                </div>
+                <!-- end logo -->
+                <!-- navbar -->
+                <ul class="navbar fs-15 d-2xl-flex items-center justify-between text-white-fd flex-1">
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">Giới thiệu</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">Tin tức</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">Thành viên</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">Booking</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">Hotels</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">Dự án</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">Ban lãnh đạo</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">Liên hệ</a>
+                    </li>
+                    
+                </ul>
+                <!-- end navbar -->
+
+                <!-- action -->
+                <div class="header-action d-2xl-flex items-center justify-between flex-0">
+                    <!-- search -->
+                    <div class="header-search">
+                        <form action="" class="header-search__form">
+                            <input class="header-search__input" type="text" placeholder="Tìm kiếm">
+                            <button class="header-search__btn">
+                                <img src="./images/icon/search.svg" alt="">
+                            </button>
+                        </form>
+                    </div>
+                    <!-- end search -->
+                    <!-- language -->
+                    <div class="language d-2xl-flex items-center">
+                        <img src="./images/icon/earth.svg" alt="" class="mr-4">
+                        <select class="language-select text-white-fd fs-15 pointer">
+                            <option value="VN" class="text-black">Tiếng Việt</option>
+                            <option value="EN" class="text-black">Tiếng Anh</option>
+                            <option value="KO" class="text-black">Tiếng Hàn</option>
+                        </select>
+                    </div>
+                    <!-- end language -->
+                </div>
+                <!-- end action -->
+            </div>
+            <!-- end pc -->
+            <!-- mb -->
+            <div class="header-mb w-wrapper d-2xl-none d-lg-flex items-center justify-between">
+                <!-- left -->
+                <div class="header-mb__left js__subMenuContainer">
+                    <!-- icon -->
+                    <div class="header-mb__leftIcon js__showSubMenu">
+                        <img src="./images/icon/bars-solid.svg" alt="">
+                    </div>
+                    <!-- end icon -->
+                    <!-- content -->
+                    <div class="sub-menu js__subMenu">
+                        <div class="sub-menu__heading d-2xl-flex items-center justify-between">
+                            <h3 class="text-white fs-32">Menu</h3>
+                            <div class="sub-menu__headingClose flex-0 p-10 js__closeSubMenu">
+                                <img src="./images/icon/close.svg" alt="">
+                            </div>
+                        </div>
+                        <!-- list -->
+                        <ul class="sub-menu__list">
+                            <li class="sub-menu__item"><a href="#">Giới thiệu</a></li>
+                            <li class="sub-menu__item"><a href="#">Giới thiệu</a></li>
+                            <li class="sub-menu__item"><a href="#">Giới thiệu</a></li>
+                            <li class="sub-menu__item"><a href="#">Giới thiệu</a></li>
+                            <li class="sub-menu__item"><a href="#">Giới thiệu</a></li>
+                        </ul>
+                        <!-- end list -->
+                    </div>
+                    <!-- end content -->
+                </div>
+                <!-- end left -->
+                <!-- center -->
+                <div class="header-mb__center">
+                    <a href="#">
+                        <img src="./images/icon/logo.svg" alt="" class="header-mb__centerLogo">
+                    </a>
+                </div>
+                <!-- end center -->
+                <!-- right -->
+                <div class="header-mb__right">
+                    <div class="header-mb__rightIcon d-2xl-flex items-center">
+                        <div class="header-mb__rightIconSearchContainer js__subMenuContainer">
+                            <div class="header-mb__rightIconSearch js__showSubMenu">
+                                <img src="./images/icon/search-white.svg" alt="">
+                            </div>
+                            <!-- content -->
+                            <div class="sub-menu js__subMenu">
+                                <div class="sub-menu__heading d-2xl-flex items-center justify-between">
+                                    <h3 class="text-white fs-32">Search</h3>
+                                    <div class="sub-menu__headingClose flex-0 p-10 js__closeSubMenu">
+                                        <img src="./images/icon/close.svg" alt="">
+                                    </div>
+                                </div>
+                                <!-- end form -->
+                                <div class="header-mb__rightSearch">
+                                    <form action="" class="header-mb__rightSearchForm">
+                                        <input class="header-mb__rightSearchInput" type="text" placeholder="Tìm kiếm">
+                                        <button class="header-mb__rightSearchBtn">
+                                            <img src="./images/icon/search.svg" alt="">
+                                        </button>
+                                    </form>
+                                </div>
+                                <!-- end form -->
+                            </div>
+                            <!-- end content -->
+                        </div>
+                        <div class="header-mb__rightIconLanguageContainer js__subMenuContainer">
+                            <!-- icon -->
+                            <div class="header-mb__rightIconLanguage js__showSubMenu">
+                                <img src="./images/icon/earth.svg" alt="">
+                            </div>
+                            <!-- end icon -->
+                            <!-- content -->
+                            <div class="sub-menu js__subMenu">
+                                <div class="sub-menu__heading d-2xl-flex items-center justify-between">
+                                    <h3 class="text-white fs-32">Language</h3>
+                                    <div class="sub-menu__headingClose flex-0 p-10 js__closeSubMenu">
+                                        <img src="./images/icon/close.svg" alt="">
+                                    </div>
+                                </div>
+                                <!-- list -->
+                                <ul class="sub-menu__list">
+                                    <li class="sub-menu__item"><a href="#">Tiếng Việt</a></li>
+                                    <li class="sub-menu__item"><a href="#">Tiếng Anh</a></li>
+                                    <li class="sub-menu__item"><a href="#">Tiếng Hàn</a></li>
+                                </ul>
+                                <!-- end list -->
+                            </div>
+                            <!-- end content -->
+                        </div>
+                    </div>
+                </div>
+                <!-- end right -->
+            </div>
+            <!-- end mb -->
+        </header>
+        <!-- end header -->
+        <!-- main -->
+        <main id="main" class="main">
+            <img src="./images/icon/logo_3.svg" alt="" class="main-bgLogo">
+            <!-- intro primary -->
+            <section class="intro-primary relative overflow-hidden bg-green-145">
+                <div class="w-1140 intro-primary__container relative z-20">
+                    <div class="intro-primary__text">
+                        <span class="intro-primary__line"></span>
+                        <span class="intro-primary__text1 fs-15 text-white uppercase">Crystal bay</span>
+                    </div>
+                    <h2 class="intro-primary__title text-white fw-700 uppercase mt-15">Thành viên</h2>
+                    <div class="intro-primary__changePage d-2xl-flex items-center gap-10">
+                        <a href="#" class="intro-primary__prev">
+                            <img src="./images/icon/prev.svg" alt="">
+                        </a>
+                        <a href="#" class="intro-primary__next">
+                            <img src="./images/icon/next_yellow.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- end intro primary -->
+
+            <!-- member primary-->
+            <section class="hotel-primary relative overflow-hidden z-20">
+                <img src="./images/wave_4.png" alt="" class="absolute hotel-primary__wave1">
+                <div class="w-1490 box-1490__container d-2xl-flex relative z-20">
+                    <!-- side -->
+                    <div class="side-primary relative z-20">
+                        <div class="side-primary__container relative z-20">
+                            <div class="side-primary__searchHotel">
+                                <h2 class="side-primary__title fs-15 fw-600 mb-20">Tìm kiếm khách sạn</h2>
+                                <div class="side-primary__field">
+                                    <form action="" class="side-primary__form">
+                                        <div class="side-primary__group mb-15">
+                                            <input type="text" placeholder="Tìm tên khách sạn" class="side-primary__input">
+                                        </div>
+                                        <div class="side-primary__group mb-15">
+                                            <select class="side-primary__select w-full fs-15">
+                                                <option value="">Quốc gia</option>
+                                                <option value="">Hà Nội</option>
+                                                <option value="">Đà Nẵng</option>
+                                                <option value="">Hải Phòng</option>
+                                            </select>
+                                        </div>
+                                        <div class="side-primary__group mb-15">
+                                            <select class="side-primary__select w-full fs-15">
+                                                <option value="">Tỉnh thành</option>
+                                                <option value="">Hà Nội</option>
+                                                <option value="">Đà Nẵng</option>
+                                                <option value="">Hải Phòng</option>
+                                            </select>
+                                        </div>
+                                        <div class="side-primary__group mb-15">
+                                            <select class="side-primary__select w-full fs-15">
+                                                <option value="">Số sao</option>
+                                                <option value="">Hà Nội</option>
+                                                <option value="">Đà Nẵng</option>
+                                                <option value="">Hải Phòng</option>
+                                            </select>
+                                        </div>
+                                            <button class="side-primary__btn btn--primary d-2xl-flex items-center justify-center w-full">
+                                                <span>Tìm kiếm</span>
+                                            </button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="side-primary__line"></div>
+                            <div class="side-primary__booking">
+                                <h2 class="side-primary__title fs-15 fw-600 mb-20">Liện hệ đặt chỗ</h2>
+                                <div class="side-primary__listBooking d-2xl-grid col-2 gap-8">
+                                    <a href="#" class="side-primary__itemBooking btn--secondary d-2xl-flex items-center justify-center w-full">
+                                        <span>KAZAKHSTAN</span>
+                                    </a>
+                                    <a href="#" class="side-primary__itemBooking btn--secondary d-2xl-flex items-center justify-center w-full">
+                                        <span>UZBEKISTAN</span>
+                                    </a>
+                                    <a href="#" class="side-primary__itemBooking btn--secondary d-2xl-flex items-center justify-center w-full">
+                                        <span>RUSSIA</span>
+                                    </a>
+                                    <a href="#" class="side-primary__itemBooking btn--secondary d-2xl-flex items-center justify-center w-full">
+                                        <span>TAIWAN</span>
+                                    </a>
+                                    <a href="#" class="side-primary__itemBooking btn--secondary d-2xl-flex items-center justify-center w-full">
+                                        <span>KOREA</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end side -->
+                    <div class="w-1140 hotel-primary__container relative w-full">
+                        <div class="articles d-2xl-grid col-2 gap-25">
+                            <!-- article -->
+                            <div class="article">
+                                <!-- img -->
+                                <div class="article-img">
+                                    <a href="#" class="image-wrapper border-10">
+                                        <img src="./images/2.jpg" alt="" class="news-primary__image">
+                                    </a>
+                                </div>
+                                <!-- end img -->
+                                <!-- content -->
+                                <div class="article-content">
+                                    <div class="intro-primary__text">
+                                        <span class="intro-primary__line"></span>
+                                        <span class="intro-primary__text1 fs-15 text-gold-b2">Khách sạn</span>
+                                    </div>
+                                    <!-- title -->
+                                    <h2 class="article-title fw-600 fs-20">
+                                        <a href="#" class="fix-text2">Crystal Bay Card hợp tác toàn diện với Nha khoa Home</a>
+                                    </h2>
+                                    <!-- end title -->
+                                    <!-- star -->
+                                    <div class="article-star">
+                                        <span class="checked"></span>
+                                        <span class="checked"></span>
+                                        <span class="checked"></span>
+                                        <span class="checked"></span>
+                                        <span></span>
+                                    </div>
+                                    <!-- end star -->
+                                    <!-- des -->
+                                    <div class="article-des fs-15 mb-20">
+                                        <p class="fix-text3">Tọa lạc ngay trung tâm thành phố biển Nha Trang xinh đẹp, khách sạn Aloha Nha Trang là sự lựa chọn...</p>
+                                    </div>
+                                    <!-- end des -->
+                                    <div class="text-gold-b2">
+                                        <a href="#" class="btn--quaternary fs-15 d-2xl-flex items-center justify-between">
+                                            <span>Tìm hiểu thêm</span>
+                                            <img src="./images/icon/next_yellow.svg" alt="" class="ml-20">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- end content -->
+                            </div>
+                            <!-- end article -->
+                            <!-- article -->
+                            <div class="article">
+                                <!-- img -->
+                                <div class="article-img">
+                                    <a href="#" class="image-wrapper border-10">
+                                        <img src="./images/2.jpg" alt="" class="news-primary__image">
+                                    </a>
+                                </div>
+                                <!-- end img -->
+                                <!-- content -->
+                                <div class="article-content">
+                                    <div class="intro-primary__text">
+                                        <span class="intro-primary__line"></span>
+                                        <span class="intro-primary__text1 fs-15 text-gold-b2">Khách sạn</span>
+                                    </div>
+                                    <!-- title -->
+                                    <h2 class="article-title fw-600 fs-20">
+                                        <a href="#" class="fix-text2">Crystal Bay Card hợp tác toàn diện với Nha khoa Home</a>
+                                    </h2>
+                                    <!-- end title -->
+                                    <!-- star -->
+                                    <div class="article-star">
+                                        <span class="checked"></span>
+                                        <span class="checked"></span>
+                                        <span class="checked"></span>
+                                        <span class="checked"></span>
+                                        <span></span>
+                                    </div>
+                                    <!-- end star -->
+                                    <!-- des -->
+                                    <div class="article-des fs-15 mb-20">
+                                        <p class="fix-text3">Tọa lạc ngay trung tâm thành phố biển Nha Trang xinh đẹp, khách sạn Aloha Nha Trang là sự lựa chọn...</p>
+                                    </div>
+                                    <!-- end des -->
+                                    <div class="text-gold-b2">
+                                        <a href="#" class="btn--quaternary fs-15 d-2xl-flex items-center justify-between">
+                                            <span>Tìm hiểu thêm</span>
+                                            <img src="./images/icon/next_yellow.svg" alt="" class="ml-20">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- end content -->
+                            </div>
+                            <!-- end article -->
+                            <!-- article -->
+                            <div class="article">
+                                <!-- img -->
+                                <div class="article-img">
+                                    <a href="#" class="image-wrapper border-10">
+                                        <img src="./images/2.jpg" alt="" class="news-primary__image">
+                                    </a>
+                                </div>
+                                <!-- end img -->
+                                <!-- content -->
+                                <div class="article-content">
+                                    <div class="intro-primary__text">
+                                        <span class="intro-primary__line"></span>
+                                        <span class="intro-primary__text1 fs-15 text-gold-b2">Khách sạn</span>
+                                    </div>
+                                    <!-- title -->
+                                    <h2 class="article-title fw-600 fs-20">
+                                        <a href="#" class="fix-text2">Crystal Bay Card hợp tác toàn diện với Nha khoa Home</a>
+                                    </h2>
+                                    <!-- end title -->
+                                    <!-- star -->
+                                    <div class="article-star">
+                                        <span class="checked"></span>
+                                        <span class="checked"></span>
+                                        <span class="checked"></span>
+                                        <span class="checked"></span>
+                                        <span></span>
+                                    </div>
+                                    <!-- end star -->
+                                    <!-- des -->
+                                    <div class="article-des fs-15 mb-20">
+                                        <p class="fix-text3">Tọa lạc ngay trung tâm thành phố biển Nha Trang xinh đẹp, khách sạn Aloha Nha Trang là sự lựa chọn...</p>
+                                    </div>
+                                    <!-- end des -->
+                                    <div class="text-gold-b2">
+                                        <a href="#" class="btn--quaternary fs-15 d-2xl-flex items-center justify-between">
+                                            <span>Tìm hiểu thêm</span>
+                                            <img src="./images/icon/next_yellow.svg" alt="" class="ml-20">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- end content -->
+                            </div>
+                            <!-- end article -->
+                            <!-- article -->
+                            <div class="article">
+                                <!-- img -->
+                                <div class="article-img">
+                                    <a href="#" class="image-wrapper border-10">
+                                        <img src="./images/2.jpg" alt="" class="news-primary__image">
+                                    </a>
+                                </div>
+                                <!-- end img -->
+                                <!-- content -->
+                                <div class="article-content">
+                                    <div class="intro-primary__text">
+                                        <span class="intro-primary__line"></span>
+                                        <span class="intro-primary__text1 fs-15 text-gold-b2">Khách sạn</span>
+                                    </div>
+                                    <!-- title -->
+                                    <h2 class="article-title fw-600 fs-20">
+                                        <a href="#" class="fix-text2">Crystal Bay Card hợp tác toàn diện với Nha khoa Home</a>
+                                    </h2>
+                                    <!-- end title -->
+                                    <!-- star -->
+                                    <div class="article-star">
+                                        <span class="checked"></span>
+                                        <span class="checked"></span>
+                                        <span class="checked"></span>
+                                        <span class="checked"></span>
+                                        <span></span>
+                                    </div>
+                                    <!-- end star -->
+                                    <!-- des -->
+                                    <div class="article-des fs-15 mb-20">
+                                        <p class="fix-text3">Tọa lạc ngay trung tâm thành phố biển Nha Trang xinh đẹp, khách sạn Aloha Nha Trang là sự lựa chọn...</p>
+                                    </div>
+                                    <!-- end des -->
+                                    <div class="text-gold-b2">
+                                        <a href="#" class="btn--quaternary fs-15 d-2xl-flex items-center justify-between">
+                                            <span>Tìm hiểu thêm</span>
+                                            <img src="./images/icon/next_yellow.svg" alt="" class="ml-20">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- end content -->
+                            </div>
+                            <!-- end article -->
+                            <!-- article -->
+                            <div class="article">
+                                <!-- img -->
+                                <div class="article-img">
+                                    <a href="#" class="image-wrapper border-10">
+                                        <img src="./images/2.jpg" alt="" class="news-primary__image">
+                                    </a>
+                                </div>
+                                <!-- end img -->
+                                <!-- content -->
+                                <div class="article-content">
+                                    <div class="intro-primary__text">
+                                        <span class="intro-primary__line"></span>
+                                        <span class="intro-primary__text1 fs-15 text-gold-b2">Khách sạn</span>
+                                    </div>
+                                    <!-- title -->
+                                    <h2 class="article-title fw-600 fs-20">
+                                        <a href="#" class="fix-text2">Crystal Bay Card hợp tác toàn diện với Nha khoa Home</a>
+                                    </h2>
+                                    <!-- end title -->
+                                    <!-- star -->
+                                    <div class="article-star">
+                                        <span class="checked"></span>
+                                        <span class="checked"></span>
+                                        <span class="checked"></span>
+                                        <span class="checked"></span>
+                                        <span></span>
+                                    </div>
+                                    <!-- end star -->
+                                    <!-- des -->
+                                    <div class="article-des fs-15 mb-20">
+                                        <p class="fix-text3">Tọa lạc ngay trung tâm thành phố biển Nha Trang xinh đẹp, khách sạn Aloha Nha Trang là sự lựa chọn...</p>
+                                    </div>
+                                    <!-- end des -->
+                                    <div class="text-gold-b2">
+                                        <a href="#" class="btn--quaternary fs-15 d-2xl-flex items-center justify-between">
+                                            <span>Tìm hiểu thêm</span>
+                                            <img src="./images/icon/next_yellow.svg" alt="" class="ml-20">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- end content -->
+                            </div>
+                            <!-- end article -->
+                            <!-- article -->
+                            <div class="article">
+                                <!-- img -->
+                                <div class="article-img">
+                                    <a href="#" class="image-wrapper border-10">
+                                        <img src="./images/2.jpg" alt="" class="news-primary__image">
+                                    </a>
+                                </div>
+                                <!-- end img -->
+                                <!-- content -->
+                                <div class="article-content">
+                                    <div class="intro-primary__text">
+                                        <span class="intro-primary__line"></span>
+                                        <span class="intro-primary__text1 fs-15 text-gold-b2">Khách sạn</span>
+                                    </div>
+                                    <!-- title -->
+                                    <h2 class="article-title fw-600 fs-20">
+                                        <a href="#" class="fix-text2">Crystal Bay Card hợp tác toàn diện với Nha khoa Home</a>
+                                    </h2>
+                                    <!-- end title -->
+                                    <!-- star -->
+                                    <div class="article-star">
+                                        <span class="checked"></span>
+                                        <span class="checked"></span>
+                                        <span class="checked"></span>
+                                        <span class="checked"></span>
+                                        <span></span>
+                                    </div>
+                                    <!-- end star -->
+                                    <!-- des -->
+                                    <div class="article-des fs-15 mb-20">
+                                        <p class="fix-text3">Tọa lạc ngay trung tâm thành phố biển Nha Trang xinh đẹp, khách sạn Aloha Nha Trang là sự lựa chọn...</p>
+                                    </div>
+                                    <!-- end des -->
+                                    <div class="text-gold-b2">
+                                        <a href="#" class="btn--quaternary fs-15 d-2xl-flex items-center justify-between">
+                                            <span>Tìm hiểu thêm</span>
+                                            <img src="./images/icon/next_yellow.svg" alt="" class="ml-20">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- end content -->
+                            </div>
+                            <!-- end article -->
+                            <!-- article -->
+                            <div class="article">
+                                <!-- img -->
+                                <div class="article-img">
+                                    <a href="#" class="image-wrapper border-10">
+                                        <img src="./images/2.jpg" alt="" class="news-primary__image">
+                                    </a>
+                                </div>
+                                <!-- end img -->
+                                <!-- content -->
+                                <div class="article-content">
+                                    <div class="intro-primary__text">
+                                        <span class="intro-primary__line"></span>
+                                        <span class="intro-primary__text1 fs-15 text-gold-b2">Khách sạn</span>
+                                    </div>
+                                    <!-- title -->
+                                    <h2 class="article-title fw-600 fs-20">
+                                        <a href="#" class="fix-text2">Crystal Bay Card hợp tác toàn diện với Nha khoa Home</a>
+                                    </h2>
+                                    <!-- end title -->
+                                    <!-- star -->
+                                    <div class="article-star">
+                                        <span class="checked"></span>
+                                        <span class="checked"></span>
+                                        <span class="checked"></span>
+                                        <span class="checked"></span>
+                                        <span></span>
+                                    </div>
+                                    <!-- end star -->
+                                    <!-- des -->
+                                    <div class="article-des fs-15 mb-20">
+                                        <p class="fix-text3">Tọa lạc ngay trung tâm thành phố biển Nha Trang xinh đẹp, khách sạn Aloha Nha Trang là sự lựa chọn...</p>
+                                    </div>
+                                    <!-- end des -->
+                                    <div class="text-gold-b2">
+                                        <a href="#" class="btn--quaternary fs-15 d-2xl-flex items-center justify-between">
+                                            <span>Tìm hiểu thêm</span>
+                                            <img src="./images/icon/next_yellow.svg" alt="" class="ml-20">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- end content -->
+                            </div>
+                            <!-- end article -->
+                            <!-- article -->
+                            <div class="article">
+                                <!-- img -->
+                                <div class="article-img">
+                                    <a href="#" class="image-wrapper border-10">
+                                        <img src="./images/2.jpg" alt="" class="news-primary__image">
+                                    </a>
+                                </div>
+                                <!-- end img -->
+                                <!-- content -->
+                                <div class="article-content">
+                                    <div class="intro-primary__text">
+                                        <span class="intro-primary__line"></span>
+                                        <span class="intro-primary__text1 fs-15 text-gold-b2">Khách sạn</span>
+                                    </div>
+                                    <!-- title -->
+                                    <h2 class="article-title fw-600 fs-20">
+                                        <a href="#" class="fix-text2">Crystal Bay Card hợp tác toàn diện với Nha khoa Home</a>
+                                    </h2>
+                                    <!-- end title -->
+                                    <!-- star -->
+                                    <div class="article-star">
+                                        <span class="checked"></span>
+                                        <span class="checked"></span>
+                                        <span class="checked"></span>
+                                        <span class="checked"></span>
+                                        <span></span>
+                                    </div>
+                                    <!-- end star -->
+                                    <!-- des -->
+                                    <div class="article-des fs-15 mb-20">
+                                        <p class="fix-text3">Tọa lạc ngay trung tâm thành phố biển Nha Trang xinh đẹp, khách sạn Aloha Nha Trang là sự lựa chọn...</p>
+                                    </div>
+                                    <!-- end des -->
+                                    <div class="text-gold-b2">
+                                        <a href="#" class="btn--quaternary fs-15 d-2xl-flex items-center justify-between">
+                                            <span>Tìm hiểu thêm</span>
+                                            <img src="./images/icon/next_yellow.svg" alt="" class="ml-20">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- end content -->
+                            </div>
+                            <!-- end article -->
+                        </div>
+                        <!-- pagination -->
+                        <div class="pagination">
+                            <a href="#" class="pagination-item pagination-btn disable">
+                                <img src="./images/icon/prev.svg" alt="">
+                            </a>
+                            <a href="#" class="pagination-item pagination-number active">1</a>
+                            <a href="#" class="pagination-item pagination-number">2</a>
+                            <a href="#" class="pagination-item pagination-number">3</a>
+                            
+                            <div class="pagination-item disable">...</div>
+                            <a href="#" class="pagination-item pagination-number">8</a>
+                            <a href="#" class="pagination-item pagination-number">9</a>
+                            <a href="#" class="pagination-item pagination-btn">
+                                <img src="./images/icon/next_yellow.svg" alt="">
+                            </a>
+                        </div>
+                        <!-- end pagination -->
+                    </div>
+                </div>
+            </section>
+            <!-- end member primary-->
+
+        </main>
+        <!-- end main -->
+        <!-- footer -->
+        <footer id="footer" class="footer">
+            <!-- footer top -->
+            <div class="footer-top bg-green-145 relative z-20 overflow-hidden">
+                <img src="./images/bg_4.png" alt="" class="footer-top__bg">
+                <div class="w-wrapper footer-top__container relative z-30">
+                    <!-- left -->
+                    <div class="footer-top__left flex-0">
+                        <div class="mb-30 footer-top__logo">
+                            <a href="#">
+                                <img src="./images/icon/logo_2.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="footer-top__social d-2xl-flex items-center justify-center gap-20">
+                            <a href="#" class="footer-top__socialLink"><img src="./images/icon/fb.svg" alt=""></a>
+                            <a href="#" class="footer-top__socialLink"><img src="./images/icon/ytb.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <!-- end left -->
+                    <!-- right -->
+                    <div class="footer-top__right flex-1">
+                        <!-- item -->
+                        <div class="footer-top__rightItem">
+                            <h3 class="title text-white uppercase">
+                                <div class="">
+                                    <span class="fs-24 fw-700">CÔNG TY CP TẬP ĐOÀN  DU LỊCH CRYSTAL BAY </span>
+                                    <br/>
+                                    <span class="fs-24">(CRYSTAL BAY GROUP)</span>
+                                </div>
+                            </h3>
+                            <div class="content text-white fs-15 d-2xl-flex items-baseline">
+                                <div class="content-img mr-24">
+                                    <img src="./images/icon/location.svg" alt="" class="">
+                                </div>
+                                <p class="content-text">
+                                    Lầu 12A, Toà nhà VCN Tower, số 2 Tố Hữu, phường Phước Hải, TP Nha Trang, Khánh Hoà
+                                </p>
+                            </div>
+                            <div class="content text-white fs-15 d-2xl-flex items-baseline">
+                                <div class="content-img mr-24">
+                                    <img src="./images/icon/call.svg" alt="" class="">
+                                </div>
+                                <div class="content-textList">
+                                    <p class="content-text">0832 59 1977</p>
+                                    <p class="content-text">+ 0912345678 (Vietnam)</p>
+                                    <p class="content-text">+ 86726833936 (Russia)</p>
+                                    <p class="content-text">+ 9286383399347 (English)</p>
+                                </div>
+                            </div>
+                            <div class="content text-white fs-15 d-2xl-flex items-baseline">
+                                <div class="content-img mr-24">
+                                    <img src="./images/icon/email.svg" alt="" class="">
+                                </div>
+                                <p class="content-text">
+                                    dung.td@crystalbay.com
+                                </p>
+                            </div>
+                            <div class="text-white">
+                                <p class="content-text">ĐKKD số: ...... 20/12/2020 của Sở KHDT Khánh Hoà</p>
+                                <p class="content-text">Mã số thuế:.....</p>
+                            </div>
+                        </div>
+                        <!-- end item -->
+                        <!-- item -->
+                        <div class="footer-top__rightItem">
+                            <h3 class="title text-white uppercase">
+                                <span class="fs-24 fw-700">Văn phòng hà nội</span>
+                            </h3>
+                            <div class="content text-white fs-15 d-2xl-flex items-baseline">
+                                <div class="content-img mr-24">
+                                    <img src="./images/icon/location.svg" alt="" class="">
+                                </div>
+                                <p class="content-text">
+                                    Lầu 7 Khu B, 273 phố Kim Mã, Phường Giảng Võ, Quận Ba Đình
+                                </p>
+                            </div>
+                            <div class="content text-white fs-15 d-2xl-flex items-baseline">
+                                <div class="content-img mr-24">
+                                    <img src="./images/icon/call.svg" alt="" class="">
+                                </div>
+                                <p class="content-text">0832 59 1977</p>
+                            </div>
+                            <div class="content text-white fs-15 d-2xl-flex items-baseline">
+                                <div class="content-img mr-24">
+                                    <img src="./images/icon/email.svg" alt="" class="">
+                                </div>
+                                <p class="content-text">
+                                    dung.td@crystalbay.com
+                                </p>
+                            </div>
+                        </div>
+                        <!-- end item -->
+                        <!-- item -->
+                        <div class="footer-top__rightItem">
+                            <h3 class="title text-white uppercase">
+                                <span class="fs-24 fw-700">Danh mục</span>
+                            </h3>
+                            
+                            <div class="content text-white fs-15">
+                                <a href="#" class="content-text uppercase d-2xl-block">Giới thiệu</a>
+                                <a href="#" class="content-text uppercase d-2xl-block">Tin tức</a>
+                                <a href="#" class="content-text uppercase d-2xl-block">Thành viên</a>
+                                <a href="#" class="content-text uppercase d-2xl-block">Booking</a>
+                                <a href="#" class="content-text uppercase d-2xl-block">Dự án</a>
+                                <a href="#" class="content-text uppercase d-2xl-block">Ban lãnh đạo</a>
+                                <a href="#" class="content-text uppercase d-2xl-block">Liên hệ</a>
+                            </div>
+                        </div>
+                        <!-- end item -->
+                        
+                    </div>
+                    <!-- end right -->
+                </div>
+                <div class="footer-top__wave">
+                    <img src="./images/wave_5.png" alt="">
+                </div>
+            </div>
+            <!-- end footer top -->
+            <!-- footer bot -->
+            <div class="footer-bot bg-green-145 relative z-20 overflow-hidden">
+                <p class="text-center fs-24">©Copyright 2023 - CrystalBay Group. Developer by CBGR vs Explus.</p>
+            </div>
+            <!-- end footer bot -->
+        </footer>
+        <!-- end footer -->
+        <script src="./lib/swiper/swiper-bundle.min.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>

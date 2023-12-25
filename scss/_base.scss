@@ -85,6 +85,10 @@ img {
     max-width: 1568px;
     margin: 0 auto;
 }
+.w-1490 {
+    max-width: 1490px;
+    margin: 0 auto;
+}
 .w-1160-r {
     max-width: 1160px;
     margin-left: auto;
@@ -174,6 +178,7 @@ img {
     outline: none;
     transition: all 0.2s ease;
 }
+
 .btn--tertiary {
     cursor: pointer;
     display: inline-flex;
@@ -187,7 +192,19 @@ img {
     outline: none;
     transition: all 0.2s ease;
 }
-
+.btn--quaternary {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: 1px solid #145062;
+    border-radius: 999px;
+    background-color: #fff;
+    color: #b29966;
+    outline: none;
+    transition: all 0.2s ease;
+}
 /*===========================================================================*/
 .fs-10 {
     font-size: 0.625rem;

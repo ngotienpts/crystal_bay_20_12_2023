@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="./images/favicon/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./images/favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./images/favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./images/favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./images/favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./images/favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./images/favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./images/favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./images/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./images/favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./images/favicon/favicon-16x16.png"
+        />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="./images/favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
+        <!-- end favicon -->
+        <title>CRYSTALBAY</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./lib/swiper/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/responsive.css" />
+        <script src="./lib/jquery/jquery.js"></script>
+    </head>
+
+    <body>
+       
+        <!-- header -->
+        <header id="header" class="header relative js__header">
+            <!-- pc -->
+            <div class="header-pc w-wrapper d-2xl-flex d-lg-none items-center justify-between">
+                <!-- logo -->
+                <div class="logo flex-0">
+                    <a href="#" class="logo-link">
+                        <img src="./images/icon/logo.svg" class="logo-img" alt="">
+                    </a>
+                </div>
+                <!-- end logo -->
+                <!-- navbar -->
+                <ul class="navbar fs-15 d-2xl-flex items-center justify-between text-white-fd flex-1">
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">Giới thiệu</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">Tin tức</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">Thành viên</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">Booking</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">Hotels</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">Dự án</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">Ban lãnh đạo</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">Liên hệ</a>
+                    </li>
+                    
+                </ul>
+                <!-- end navbar -->
+
+                <!-- action -->
+                <div class="header-action d-2xl-flex items-center justify-between flex-0">
+                    <!-- search -->
+                    <div class="header-search">
+                        <form action="" class="header-search__form">
+                            <input class="header-search__input" type="text" placeholder="Tìm kiếm">
+                            <button class="header-search__btn">
+                                <img src="./images/icon/search.svg" alt="">
+                            </button>
+                        </form>
+                    </div>
+                    <!-- end search -->
+                    <!-- language -->
+                    <div class="language d-2xl-flex items-center">
+                        <img src="./images/icon/earth.svg" alt="" class="mr-4">
+                        <select class="language-select text-white-fd fs-15 pointer">
+                            <option value="VN" class="text-black">Tiếng Việt</option>
+                            <option value="EN" class="text-black">Tiếng Anh</option>
+                            <option value="KO" class="text-black">Tiếng Hàn</option>
+                        </select>
+                    </div>
+                    <!-- end language -->
+                </div>
+                <!-- end action -->
+            </div>
+            <!-- end pc -->
+            <!-- mb -->
+            <div class="header-mb w-wrapper d-2xl-none d-lg-flex items-center justify-between">
+                <!-- left -->
+                <div class="header-mb__left js__subMenuContainer">
+                    <!-- icon -->
+                    <div class="header-mb__leftIcon js__showSubMenu">
+                        <img src="./images/icon/bars-solid.svg" alt="">
+                    </div>
+                    <!-- end icon -->
+                    <!-- content -->
+                    <div class="sub-menu js__subMenu">
+                        <div class="sub-menu__heading d-2xl-flex items-center justify-between">
+                            <h3 class="text-white fs-32">Menu</h3>
+                            <div class="sub-menu__headingClose flex-0 p-10 js__closeSubMenu">
+                                <img src="./images/icon/close.svg" alt="">
+                            </div>
+                        </div>
+                        <!-- list -->
+                        <ul class="sub-menu__list">
+                            <li class="sub-menu__item"><a href="#">Giới thiệu</a></li>
+                            <li class="sub-menu__item"><a href="#">Giới thiệu</a></li>
+                            <li class="sub-menu__item"><a href="#">Giới thiệu</a></li>
+                            <li class="sub-menu__item"><a href="#">Giới thiệu</a></li>
+                            <li class="sub-menu__item"><a href="#">Giới thiệu</a></li>
+                        </ul>
+                        <!-- end list -->
+                    </div>
+                    <!-- end content -->
+                </div>
+                <!-- end left -->
+                <!-- center -->
+                <div class="header-mb__center">
+                    <a href="#">
+                        <img src="./images/icon/logo.svg" alt="" class="header-mb__centerLogo">
+                    </a>
+                </div>
+                <!-- end center -->
+                <!-- right -->
+                <div class="header-mb__right">
+                    <div class="header-mb__rightIcon d-2xl-flex items-center">
+                        <div class="header-mb__rightIconSearchContainer js__subMenuContainer">
+                            <div class="header-mb__rightIconSearch js__showSubMenu">
+                                <img src="./images/icon/search-white.svg" alt="">
+                            </div>
+                            <!-- content -->
+                            <div class="sub-menu js__subMenu">
+                                <div class="sub-menu__heading d-2xl-flex items-center justify-between">
+                                    <h3 class="text-white fs-32">Search</h3>
+                                    <div class="sub-menu__headingClose flex-0 p-10 js__closeSubMenu">
+                                        <img src="./images/icon/close.svg" alt="">
+                                    </div>
+                                </div>
+                                <!-- end form -->
+                                <div class="header-mb__rightSearch">
+                                    <form action="" class="header-mb__rightSearchForm">
+                                        <input class="header-mb__rightSearchInput" type="text" placeholder="Tìm kiếm">
+                                        <button class="header-mb__rightSearchBtn">
+                                            <img src="./images/icon/search.svg" alt="">
+                                        </button>
+                                    </form>
+                                </div>
+                                <!-- end form -->
+                            </div>
+                            <!-- end content -->
+                        </div>
+                        <div class="header-mb__rightIconLanguageContainer js__subMenuContainer">
+                            <!-- icon -->
+                            <div class="header-mb__rightIconLanguage js__showSubMenu">
+                                <img src="./images/icon/earth.svg" alt="">
+                            </div>
+                            <!-- end icon -->
+                            <!-- content -->
+                            <div class="sub-menu js__subMenu">
+                                <div class="sub-menu__heading d-2xl-flex items-center justify-between">
+                                    <h3 class="text-white fs-32">Language</h3>
+                                    <div class="sub-menu__headingClose flex-0 p-10 js__closeSubMenu">
+                                        <img src="./images/icon/close.svg" alt="">
+                                    </div>
+                                </div>
+                                <!-- list -->
+                                <ul class="sub-menu__list">
+                                    <li class="sub-menu__item"><a href="#">Tiếng Việt</a></li>
+                                    <li class="sub-menu__item"><a href="#">Tiếng Anh</a></li>
+                                    <li class="sub-menu__item"><a href="#">Tiếng Hàn</a></li>
+                                </ul>
+                                <!-- end list -->
+                            </div>
+                            <!-- end content -->
+                        </div>
+                    </div>
+                </div>
+                <!-- end right -->
+            </div>
+            <!-- end mb -->
+        </header>
+        <!-- end header -->
+        <!-- main -->
+        <main id="main" class="main">
+            <img src="./images/icon/logo_3.svg" alt="" class="main-bgLogo">
+            <!-- intro primary -->
+            <section class="intro-primary relative overflow-hidden bg-green-145">
+                <div class="w-1140 intro-primary__container relative z-20">
+                    <div class="intro-primary__text">
+                        <span class="intro-primary__line"></span>
+                        <span class="intro-primary__text1 fs-15 text-white uppercase">Crystal bay</span>
+                    </div>
+                    <h2 class="intro-primary__title text-white fw-700 uppercase mt-15">Tin tức</h2>
+                    <div class="intro-primary__changePage d-2xl-flex items-center gap-10">
+                        <a href="#" class="intro-primary__prev">
+                            <img src="./images/icon/prev.svg" alt="">
+                        </a>
+                        <a href="#" class="intro-primary__next">
+                            <img src="./images/icon/next_yellow.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- end intro primary -->
+
+            <!-- detail primary -->
+            <section class="detail-primary relative overflow-hidden z-20">
+                <div class="w-1140 detail-primary__container relative z-20">
+                    <h1 class="detail-title text-gradient-tertiary fs-40 fw-700 mb-15">Crystal Bay Card hợp tác toàn diện với Nha khoa Home</h1>
+                    <p class="detail-timePublic fs-15 mb-20">12/01/2023</p>
+                    <div class="detail-sapo fs-15 fw-600 mb-15">
+                        <span>Crystal Bay Card một lần nữa trở thành đơn vị tiên phong trong ngành du lịch nghỉ dưỡng đưa dịch vụ chăm sóc, thẩm mỹ nha khoa vào trong danh mục các tiện ích cung cấp cho khách hàng bằng lễ ký kết hợp tác toàn diện với Nha khoa Home.</span>
+                    </div>
+                    <!-- content -->
+                    <div class="detail-content">
+                        <p>
+                            Nằm trong chiến lược mở rộng thị trường khai thác khách du lịch quốc tế và đa dạng hoá thị trường khách du lịch quốc tế đến VN, Tập đoàn du lịch Crystal Bay phối hợp cùng Hãng hàng không Quanot Sharq – Uzbekistan tổ chức đường bay thuê chuyến hàng tuần tới Phú Quốc và Cam Ranh. Chuyến bay đầu tiên từ Uzbekistan đã đáp xuống sân bay Phú Quốc trưa ngày 07/11/2023.
+                        </p>
+                        <figure class="expNoEdit">
+                            <img src="./images/2.jpg" alt="">  
+                            <figcaption>  
+                                <h2 class="expEdit">
+                                    <em>Ảnh minh hoạ. Nguồn: Internet</em>
+                                </h2>  
+                            </figcaption>  
+                        </figure>
+                        <p>
+                            Nằm trong chiến lược mở rộng thị trường khai thác khách du lịch quốc tế và đa dạng hoá thị trường khách du lịch quốc tế đến VN, Tập đoàn du lịch Crystal Bay phối hợp cùng Hãng hàng không Quanot Sharq – Uzbekistan tổ chức đường bay thuê chuyến hàng tuần tới Phú Quốc và Cam Ranh. Chuyến bay đầu tiên từ Uzbekistan đã đáp xuống sân bay Phú Quốc trưa ngày 07/11/2023.
+                        </p>
+                        <figure class="expNoEdit">
+                            <img src="./images/2.jpg" alt="">  
+                            <figcaption>  
+                                <h2 class="expEdit">
+                                    <em>Ảnh minh hoạ. Nguồn: Internet</em>
+                                </h2>  
+                            </figcaption>  
+                        </figure>
+                        <p>
+                            Nằm trong chiến lược mở rộng thị trường khai thác khách du lịch quốc tế và đa dạng hoá thị trường khách du lịch quốc tế đến VN, Tập đoàn du lịch Crystal Bay phối hợp cùng Hãng hàng không Quanot Sharq – Uzbekistan tổ chức đường bay thuê chuyến hàng tuần tới Phú Quốc và Cam Ranh. Chuyến bay đầu tiên từ Uzbekistan đã đáp xuống sân bay Phú Quốc trưa ngày 07/11/2023.
+                        </p>
+                        <figure class="expNoEdit">
+                            <img src="./images/2.jpg" alt="">  
+                            <figcaption>  
+                                <h2 class="expEdit">
+                                    <em>Ảnh minh hoạ. Nguồn: Internet</em>
+                                </h2>  
+                            </figcaption>  
+                        </figure>
+                        <p>
+                            Nằm trong chiến lược mở rộng thị trường khai thác khách du lịch quốc tế và đa dạng hoá thị trường khách du lịch quốc tế đến VN, Tập đoàn du lịch Crystal Bay phối hợp cùng Hãng hàng không Quanot Sharq – Uzbekistan tổ chức đường bay thuê chuyến hàng tuần tới Phú Quốc và Cam Ranh. Chuyến bay đầu tiên từ Uzbekistan đã đáp xuống sân bay Phú Quốc trưa ngày 07/11/2023.
+                        </p>
+                        <figure class="expNoEdit">
+                            <img src="./images/2.jpg" alt="">  
+                            <figcaption>  
+                                <h2 class="expEdit">
+                                    <em>Ảnh minh hoạ. Nguồn: Internet</em>
+                                </h2>  
+                            </figcaption>  
+                        </figure>
+                        <p>
+                            Nằm trong chiến lược mở rộng thị trường khai thác khách du lịch quốc tế và đa dạng hoá thị trường khách du lịch quốc tế đến VN, Tập đoàn du lịch Crystal Bay phối hợp cùng Hãng hàng không Quanot Sharq – Uzbekistan tổ chức đường bay thuê chuyến hàng tuần tới Phú Quốc và Cam Ranh. Chuyến bay đầu tiên từ Uzbekistan đã đáp xuống sân bay Phú Quốc trưa ngày 07/11/2023.
+                        </p>
+                    </div>
+                    <!-- end content -->
+                    <!-- action -->
+                    <div class="detail-primary__action d-2xl-flex items-center">
+                        <div class="detail-primary__actionText d-2xl-flex items-center text-green-145 fs-20">
+                            <span>Thích</span>
+                            <span>|</span>
+                            <span>Chia sẻ</span>
+                        </div>
+                        <div class="detail-primary__actionList d-2xl-flex items-center">
+                            <a href="#" class="detail-primary__actionLink">
+                                <img src="./images/zalo.png" alt="">
+                            </a>
+                            <a href="#" class="detail-primary__actionLink">
+                                <img src="./images/ytb.png" alt="">
+                            </a>
+                            <a href="#" class="detail-primary__actionLink">
+                                <img src="./images/fb.png" alt="">
+                            </a>
+                        </div>
+
+                    </div>
+                    <!-- end action -->
+                </div>
+            </section>
+            <!-- end detail primary -->
+
+            <!-- tin khac -->
+            <section class="news-other relative overflow-hidden z-20">
+                <div class="w-1140 news-other__container relative">
+                    <h2 class="heading-primary text-green-145 text-left">Tin khác</h2>
+                    <!-- container -->
+                    <div class="news-other__slide js__swiperThreeContainer section-slide relative">
+                        <div class="swiper js__swiperThrees">
+                            <div class="swiper-wrapper">
+                                <!-- slide -->
+                                <div class="swiper-slide">
+                                    <div class="article">
+                                        <!-- img -->
+                                        <div class="article-img">
+                                            <a href="#" class="image-wrapper border-10">
+                                                <img src="./images/2.jpg" alt="" class="news-other__image">
+                                            </a>
+                                        </div>
+                                        <!-- end img -->
+                                        <!-- content -->
+                                        <div class="article-content mt-15">
+                                            <!-- title -->
+                                            <h3 class="article-title text-green-145 fw-600 mb-4 fs-15">
+                                                <a href="#" class="fix-text3">Crystal Bay Card hợp tác toàn diện với Nha khoa Home</a>
+                                            </h3>
+                                            <!-- end title -->
+                                            <!-- des -->
+                                            <p class="article-time fs-15">06/12/2023</p>
+                                            <!-- end des -->
+                                        </div>
+                                        <!-- end content -->
+                                    </div>
+                                </div>
+                                <!-- end slide -->
+                                <!-- slide -->
+                                <div class="swiper-slide">
+                                    <div class="article">
+                                        <!-- img -->
+                                        <div class="article-img">
+                                            <a href="#" class="image-wrapper border-10">
+                                                <img src="./images/2.jpg" alt="" class="news-other__image">
+                                            </a>
+                                        </div>
+                                        <!-- end img -->
+                                        <!-- content -->
+                                        <div class="article-content mt-15">
+                                            <!-- title -->
+                                            <h3 class="article-title text-green-145 fw-600 mb-4 fs-15">
+                                                <a href="#" class="fix-text3">Crystal Bay Card hợp tác toàn diện với Nha khoa Home</a>
+                                            </h3>
+                                            <!-- end title -->
+                                            <!-- des -->
+                                            <p class="article-time fs-15">06/12/2023</p>
+                                            <!-- end des -->
+                                        </div>
+                                        <!-- end content -->
+                                    </div>
+                                </div>
+                                <!-- end slide -->
+                                <!-- slide -->
+                                <div class="swiper-slide">
+                                    <div class="article">
+                                        <!-- img -->
+                                        <div class="article-img">
+                                            <a href="#" class="image-wrapper border-10">
+                                                <img src="./images/2.jpg" alt="" class="news-other__image">
+                                            </a>
+                                        </div>
+                                        <!-- end img -->
+                                        <!-- content -->
+                                        <div class="article-content mt-15">
+                                            <!-- title -->
+                                            <h3 class="article-title text-green-145 fw-600 mb-4 fs-15">
+                                                <a href="#" class="fix-text3">Crystal Bay Card hợp tác toàn diện với Nha khoa Home</a>
+                                            </h3>
+                                            <!-- end title -->
+                                            <!-- des -->
+                                            <p class="article-time fs-15">06/12/2023</p>
+                                            <!-- end des -->
+                                        </div>
+                                        <!-- end content -->
+                                    </div>
+                                </div>
+                                <!-- end slide -->
+                                <!-- slide -->
+                                <div class="swiper-slide">
+                                    <div class="article">
+                                        <!-- img -->
+                                        <div class="article-img">
+                                            <a href="#" class="image-wrapper border-10">
+                                                <img src="./images/2.jpg" alt="" class="news-other__image">
+                                            </a>
+                                        </div>
+                                        <!-- end img -->
+                                        <!-- content -->
+                                        <div class="article-content mt-15">
+                                            <!-- title -->
+                                            <h3 class="article-title text-green-145 fw-600 mb-4 fs-15">
+                                                <a href="#" class="fix-text3">Crystal Bay Card hợp tác toàn diện với Nha khoa Home</a>
+                                            </h3>
+                                            <!-- end title -->
+                                            <!-- des -->
+                                            <p class="article-time fs-15">06/12/2023</p>
+                                            <!-- end des -->
+                                        </div>
+                                        <!-- end content -->
+                                    </div>
+                                </div>
+                                <!-- end slide -->
+                                
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                    <!-- end container -->
+                </div>
+            </section>
+            <!-- end tin khac -->
+
+
+            <!-- quinary -->
+            <section class="intro-quinary relative overflow-hidden">
+                <div class="w-1140 intro-quinary__container relative">
+                    <h2 class="heading-primary text-green-145 text-center">Brands/Partner</h2>
+                    <!-- container -->
+                    <div class="intro-quinary__container js__swiperFiveContainer section-slide relative">
+                        <div class="swiper js__swiperFives">
+                            <div class="swiper-wrapper">
+                                <!-- slide -->
+                                <div class="swiper-slide">
+                                    <div class="intro-quinary__slideImage">
+                                        <img src="./images/partner_1.png" alt="" class="">
+                                    </div>
+                                </div>
+                                <!-- end slide -->
+                                <!-- slide -->
+                                <div class="swiper-slide">
+                                    <div class="intro-quinary__slideImage">
+                                        <img src="./images/partner_2.png" alt="" class="">
+                                    </div>
+                                </div>
+                                <!-- end slide -->
+                                <!-- slide -->
+                                <div class="swiper-slide">
+                                    <div class="intro-quinary__slideImage">
+                                        <img src="./images/partner_3.png" alt="" class="">
+                                    </div>
+                                </div>
+                                <!-- end slide -->
+                                <!-- slide -->
+                                <div class="swiper-slide">
+                                    <div class="intro-quinary__slideImage">
+                                        <img src="./images/partner_4.png" alt="" class="">
+                                    </div>
+                                </div>
+                                <!-- end slide -->
+                                <!-- slide -->
+                                <div class="swiper-slide">
+                                    <div class="intro-quinary__slideImage">
+                                        <img src="./images/partner_5.png" alt="" class="">
+                                    </div>
+                                </div>
+                                <!-- end slide -->
+                                <!-- slide -->
+                                <div class="swiper-slide">
+                                    <div class="intro-quinary__slideImage">
+                                        <img src="./images/partner_2.png" alt="" class="">
+                                    </div>
+                                </div>
+                                <!-- end slide -->
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                    <!-- end container -->
+                </div>
+            </section>
+            <!-- end quinarry -->
+
+        </main>
+        <!-- end main -->
+        <!-- footer -->
+        <footer id="footer" class="footer">
+            <!-- footer top -->
+            <div class="footer-top bg-green-145 relative z-20 overflow-hidden">
+                <img src="./images/bg_4.png" alt="" class="footer-top__bg">
+                <div class="w-wrapper footer-top__container relative z-30">
+                    <!-- left -->
+                    <div class="footer-top__left flex-0">
+                        <div class="mb-30 footer-top__logo">
+                            <a href="#">
+                                <img src="./images/icon/logo_2.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="footer-top__social d-2xl-flex items-center justify-center gap-20">
+                            <a href="#" class="footer-top__socialLink"><img src="./images/icon/fb.svg" alt=""></a>
+                            <a href="#" class="footer-top__socialLink"><img src="./images/icon/ytb.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <!-- end left -->
+                    <!-- right -->
+                    <div class="footer-top__right flex-1">
+                        <!-- item -->
+                        <div class="footer-top__rightItem">
+                            <h3 class="title text-white uppercase">
+                                <div class="">
+                                    <span class="fs-24 fw-700">CÔNG TY CP TẬP ĐOÀN  DU LỊCH CRYSTAL BAY </span>
+                                    <br/>
+                                    <span class="fs-24">(CRYSTAL BAY GROUP)</span>
+                                </div>
+                            </h3>
+                            <div class="content text-white fs-15 d-2xl-flex items-baseline">
+                                <div class="content-img mr-24">
+                                    <img src="./images/icon/location.svg" alt="" class="">
+                                </div>
+                                <p class="content-text">
+                                    Lầu 12A, Toà nhà VCN Tower, số 2 Tố Hữu, phường Phước Hải, TP Nha Trang, Khánh Hoà
+                                </p>
+                            </div>
+                            <div class="content text-white fs-15 d-2xl-flex items-baseline">
+                                <div class="content-img mr-24">
+                                    <img src="./images/icon/call.svg" alt="" class="">
+                                </div>
+                                <div class="content-textList">
+                                    <p class="content-text">0832 59 1977</p>
+                                    <p class="content-text">+ 0912345678 (Vietnam)</p>
+                                    <p class="content-text">+ 86726833936 (Russia)</p>
+                                    <p class="content-text">+ 9286383399347 (English)</p>
+                                </div>
+                            </div>
+                            <div class="content text-white fs-15 d-2xl-flex items-baseline">
+                                <div class="content-img mr-24">
+                                    <img src="./images/icon/email.svg" alt="" class="">
+                                </div>
+                                <p class="content-text">
+                                    dung.td@crystalbay.com
+                                </p>
+                            </div>
+                            <div class="text-white">
+                                <p class="content-text">ĐKKD số: ...... 20/12/2020 của Sở KHDT Khánh Hoà</p>
+                                <p class="content-text">Mã số thuế:.....</p>
+                            </div>
+                        </div>
+                        <!-- end item -->
+                        <!-- item -->
+                        <div class="footer-top__rightItem">
+                            <h3 class="title text-white uppercase">
+                                <span class="fs-24 fw-700">Văn phòng hà nội</span>
+                            </h3>
+                            <div class="content text-white fs-15 d-2xl-flex items-baseline">
+                                <div class="content-img mr-24">
+                                    <img src="./images/icon/location.svg" alt="" class="">
+                                </div>
+                                <p class="content-text">
+                                    Lầu 7 Khu B, 273 phố Kim Mã, Phường Giảng Võ, Quận Ba Đình
+                                </p>
+                            </div>
+                            <div class="content text-white fs-15 d-2xl-flex items-baseline">
+                                <div class="content-img mr-24">
+                                    <img src="./images/icon/call.svg" alt="" class="">
+                                </div>
+                                <p class="content-text">0832 59 1977</p>
+                            </div>
+                            <div class="content text-white fs-15 d-2xl-flex items-baseline">
+                                <div class="content-img mr-24">
+                                    <img src="./images/icon/email.svg" alt="" class="">
+                                </div>
+                                <p class="content-text">
+                                    dung.td@crystalbay.com
+                                </p>
+                            </div>
+                        </div>
+                        <!-- end item -->
+                        <!-- item -->
+                        <div class="footer-top__rightItem">
+                            <h3 class="title text-white uppercase">
+                                <span class="fs-24 fw-700">Danh mục</span>
+                            </h3>
+                            
+                            <div class="content text-white fs-15">
+                                <a href="#" class="content-text uppercase d-2xl-block">Giới thiệu</a>
+                                <a href="#" class="content-text uppercase d-2xl-block">Tin tức</a>
+                                <a href="#" class="content-text uppercase d-2xl-block">Thành viên</a>
+                                <a href="#" class="content-text uppercase d-2xl-block">Booking</a>
+                                <a href="#" class="content-text uppercase d-2xl-block">Dự án</a>
+                                <a href="#" class="content-text uppercase d-2xl-block">Ban lãnh đạo</a>
+                                <a href="#" class="content-text uppercase d-2xl-block">Liên hệ</a>
+                            </div>
+                        </div>
+                        <!-- end item -->
+                        
+                    </div>
+                    <!-- end right -->
+                </div>
+                <div class="footer-top__wave">
+                    <img src="./images/wave_5.png" alt="">
+                </div>
+            </div>
+            <!-- end footer top -->
+            <!-- footer bot -->
+            <div class="footer-bot bg-green-145 relative z-20 overflow-hidden">
+                <p class="text-center fs-24">©Copyright 2023 - CrystalBay Group. Developer by CBGR vs Explus.</p>
+            </div>
+            <!-- end footer bot -->
+        </footer>
+        <!-- end footer -->
+        <script src="./lib/swiper/swiper-bundle.min.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>

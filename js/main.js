@@ -15,6 +15,12 @@ document.addEventListener("DOMContentLoaded", function () {
     // sub menu
     const subMenus = document.querySelectorAll(".js__subMenuContainer");
 
+    // sidebar
+    const sidebarContainer = document.querySelector(".js__sidebarContainer");
+
+    // fancybox
+    var fancyboxes = document.querySelectorAll(".fancybox-full");
+
     // slide
     var threePointFiveSlides = document.querySelectorAll(
         ".js__swiperThreePointFiveContainer"
@@ -27,6 +33,9 @@ document.addEventListener("DOMContentLoaded", function () {
         ".js__swiperGalleryContainerVideo"
     );
     var oneSlides = document.querySelectorAll(".js__swiperOneContainer");
+    var oneCardSlides = document.querySelectorAll(
+        ".js__swiperOneCardContainer"
+    );
     var threeSlides = document.querySelectorAll(".js__swiperThreeContainer");
     var fiveSlides = document.querySelectorAll(".js__swiperFiveContainer");
 
@@ -119,6 +128,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // });
         },
+        // sticky sidebar
+        stickySlidebar: function () {
+            if (sidebarContainer) {
+                var leftSide =
+                    sidebarContainer.querySelector(".js__leftSidebar");
+                var rightSide =
+                    sidebarContainer.querySelector(".js__rightSidebar");
+                $(leftSide, rightSide).theiaStickySidebar({
+                    containerSelector: sidebarContainer,
+                    additionalMarginTop: 200,
+                    additionalMarginBottom: 20,
+                });
+            }
+        },
+        // fancybox
+        fancybox: function () {
+            if (fancyboxes) {
+                fancyboxes.forEach(function (fancybox) {
+                    $(".fancybox-full a").fancybox();
+                });
+            }
+        },
         // slider one
         sliderOneItems: function () {
             oneSlides.forEach((item) => {
@@ -129,6 +160,22 @@ document.addEventListener("DOMContentLoaded", function () {
                     slidesPerView: 1,
                     spaceBetween: 18,
                     slidesPerGroup: 1,
+                    navigation: {
+                        nextEl: next || null,
+                        prevEl: prev || null,
+                    },
+                });
+            });
+        },
+        // slider one card
+        sliderOneCardItems: function () {
+            oneCardSlides.forEach((item) => {
+                var slider = item.querySelector(".js__swiperOneCards");
+                var next = item.querySelector(".swiper-button-next");
+                var prev = item.querySelector(".swiper-button-prev");
+                new Swiper(slider, {
+                    effect: "cards",
+                    grabCursor: true,
                     navigation: {
                         nextEl: next || null,
                         prevEl: prev || null,
@@ -280,7 +327,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     spaceBetween: 10,
                     slidesPerView: 2,
                     slidesPerGroup: 1,
-                    loopedSlides: 4,
+                    freeMode: true,
+                    watchSlidesProgress: true,
                     breakpoints: {
                         640: {
                             slidesPerView: 3,
@@ -304,10 +352,13 @@ document.addEventListener("DOMContentLoaded", function () {
                         nextEl: next,
                         prevEl: prev,
                     },
+                    thumbs: {
+                        swiper: small,
+                    },
                 });
 
-                small.controller.control = large;
-                large.controller.control = small;
+                // small.controller.control = large;
+                // large.controller.control = small;
             });
         },
         // slider gallery video
@@ -322,6 +373,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     spaceBetween: 10,
                     slidesPerView: 2,
                     slidesPerGroup: 1,
+                    freeMode: true,
+                    watchSlidesProgress: true,
                     breakpoints: {
                         640: {
                             spaceBetween: 20,
@@ -345,10 +398,13 @@ document.addEventListener("DOMContentLoaded", function () {
                         nextEl: next,
                         prevEl: prev,
                     },
+                    thumbs: {
+                        swiper: small,
+                    },
                 });
 
-                small.controller.control = large;
-                large.controller.control = small;
+                // small.controller.control = large;
+                // large.controller.control = small;
             });
         },
         // scroll top
@@ -377,8 +433,14 @@ document.addEventListener("DOMContentLoaded", function () {
         start: function () {
             // su ly cac su kien
             this.handleEvent();
+            // sticky sidebar
+            this.stickySlidebar();
+            // fancybox
+            this.fancybox();
             // slider one
             this.sliderOneItems();
+            // slider one card
+            this.sliderOneCardItems();
             // slider three
             this.sliderThreeItems();
             // slider three point five

@@ -1113,6 +1113,16 @@ img {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.text-gradient-quaternary {
+    opacity: 0.3;
+    background: var(
+        --Gradient-Yellow-2,
+        linear-gradient(91deg, #b29966 0%, #f9cf79 100%)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .text-underline {
     text-decoration: underline;
 }

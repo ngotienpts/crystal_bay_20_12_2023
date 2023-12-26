@@ -43,11 +43,13 @@
             display: block;
             font-size: 22px;
             font-weight: 700;
+            color: #145062;
         }
         & > h3 {
             display: block;
             font-size: 17px;
             font-weight: 700;
+            color: #145062;
         }
         & > h4,
         h5,
@@ -55,6 +57,7 @@
             display: block;
             font-size: 15px;
             font-weight: 700;
+            color: #145062;
         }
         & a {
             color: #145062;
@@ -64,6 +67,30 @@
             padding-left: 40px;
             li {
                 list-style: disc;
+            }
+        }
+        table {
+            width: 100%;
+            margin: 20px 0;
+            border-radius: 10px;
+            background: #fdfdfd;
+            box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            border: 1px solid;
+            tbody {
+                border-top: 4px solid #145062;
+            }
+            tr {
+                border: 1px solid;
+            }
+            td {
+                width: 50%;
+                padding: 15px 20px;
+                font-size: 15px;
+                border: 1px solid;
+                strong {
+                    color: #145062;
+                }
             }
         }
     }
@@ -94,5 +121,46 @@
         left: -120px;
         right: auto;
         top: 30%;
+    }
+}
+
+.detail-secondary {
+    &__container {
+        .detail-title {
+            font-size: 50px;
+        }
+        .section-senary__large {
+            margin-bottom: 30px;
+        }
+    }
+    &__changeTab {
+        margin-top: 70px;
+    }
+
+    &__paneOne {
+        .articles {
+            grid-gap: 30px 50px;
+        }
+        ul {
+            padding-left: 20px;
+            font-size: 15px;
+            li {
+                list-style: disc;
+            }
+        }
+    }
+    &__paneThree {
+        .article + .article {
+            margin-top: 50px;
+        }
+    }
+
+    &__contact {
+        margin-top: 50px;
+        padding-top: 50px;
+        border-top: 2px solid #b29966;
+    }
+    &__listBooking {
+        flex-wrap: wrap;
     }
 }

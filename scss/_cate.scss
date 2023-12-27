@@ -644,6 +644,8 @@
 
         .swiper-slide {
             opacity: 0.3;
+            user-select: none;
+            pointer-events: none;
             &.swiper-slide-active {
                 opacity: 1;
             }

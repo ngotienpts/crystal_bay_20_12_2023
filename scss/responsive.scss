@@ -946,6 +946,28 @@
                 height: 40px;
             }
         }
+        &__video {
+            margin-top: 50px;
+            .article-content {
+                margin-top: 50px;
+            }
+            .article-title {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+            .swiper-button-next,
+            .swiper-rtl .swiper-button-prev {
+                right: auto;
+                left: 40px;
+                top: 51%;
+            }
+            .swiper-button-prev,
+            .swiper-rtl .swiper-button-next {
+                left: 0;
+                top: 51%;
+                right: auto;
+            }
+        }
     }
     /*------------------------------------------------------------- detail*/
     .detail-primary {

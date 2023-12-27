@@ -196,7 +196,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     slidesPerView: 1,
                     spaceBetween: 18,
                     centeredSlides: true,
-                    loop: true,
+                    loop: false,
                     slidesPerGroup: 1,
                     navigation: {
                         nextEl: next || null,
@@ -206,14 +206,17 @@ document.addEventListener("DOMContentLoaded", function () {
                         768: {
                             slidesPerView: 2,
                             spaceBetween: 20,
+                            loop: true,
                         },
                         1024: {
                             slidesPerView: 2,
                             spaceBetween: 30,
+                            loop: true,
                         },
                         1200: {
                             slidesPerView: 2,
                             spaceBetween: 50,
+                            loop: true,
                         },
                     },
                 });

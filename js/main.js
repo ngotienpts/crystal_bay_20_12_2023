@@ -38,6 +38,9 @@ document.addEventListener("DOMContentLoaded", function () {
     );
     var threeSlides = document.querySelectorAll(".js__swiperThreeContainer");
     var fiveSlides = document.querySelectorAll(".js__swiperFiveContainer");
+    var videoLibrarySlides = document.querySelectorAll(
+        ".js__swiperVideoLibraryContainer"
+    );
 
     function switchTab(tabId, ...otherTabIds) {
         document
@@ -179,6 +182,39 @@ document.addEventListener("DOMContentLoaded", function () {
                     navigation: {
                         nextEl: next || null,
                         prevEl: prev || null,
+                    },
+                });
+            });
+        },
+        // slider video library
+        sliderVideoLibraryItems: function () {
+            videoLibrarySlides.forEach((item) => {
+                var slider = item.querySelector(".js__swiperVideoLibrary");
+                var next = item.querySelector(".swiper-button-next");
+                var prev = item.querySelector(".swiper-button-prev");
+                new Swiper(slider, {
+                    slidesPerView: 1,
+                    spaceBetween: 18,
+                    centeredSlides: true,
+                    loop: true,
+                    slidesPerGroup: 1,
+                    navigation: {
+                        nextEl: next || null,
+                        prevEl: prev || null,
+                    },
+                    breakpoints: {
+                        768: {
+                            slidesPerView: 2,
+                            spaceBetween: 20,
+                        },
+                        1024: {
+                            slidesPerView: 2,
+                            spaceBetween: 30,
+                        },
+                        1200: {
+                            slidesPerView: 2,
+                            spaceBetween: 50,
+                        },
                     },
                 });
             });
@@ -441,6 +477,8 @@ document.addEventListener("DOMContentLoaded", function () {
             this.sliderOneItems();
             // slider one card
             this.sliderOneCardItems();
+            // slider video library
+            this.sliderVideoLibraryItems();
             // slider three
             this.sliderThreeItems();
             // slider three point five

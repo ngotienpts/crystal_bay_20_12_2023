@@ -462,6 +462,11 @@
             }
         }
     }
+    .article {
+        .video-play {
+            width: 56px;
+        }
+    }
     /*------------------------------------------------------------- cate*/
     /*------------------------------------------------------------- hotel*/
     .hotel-primary {
@@ -684,6 +689,11 @@
             left: -10px;
         }
     }
+    .article {
+        .video-play {
+            width: 32px;
+        }
+    }
     /*------------------------------------------------------------- cate*/
     /*------------------------------------------------------------- intro*/
     .intro-primary {
@@ -902,6 +912,38 @@
         &__right {
             iframe {
                 height: 400px;
+            }
+        }
+    }
+    /*------------------------------------------------------------- library*/
+    .library-primary {
+        .section-senary__large {
+            display: block;
+        }
+        &__slideLarge {
+            width: 100%;
+        }
+        &__contentLarge {
+            padding-top: 10px;
+            padding-left: 0;
+        }
+        &__picture {
+            .section-senary__large {
+                padding-bottom: 15px;
+                margin-bottom: 20px;
+            }
+        }
+        &__filter {
+            flex-direction: column;
+            max-width: 100%;
+            gap: 10px;
+        }
+        &__filterBtn {
+            width: 100%;
+        }
+        &__filterGroup {
+            .library-primary__filterSelect {
+                height: 40px;
             }
         }
     }

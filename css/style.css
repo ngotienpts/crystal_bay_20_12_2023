@@ -2708,6 +2708,9 @@ img {
 .library-primary {
   padding: 67px 20px;
 }
+.library-primary__filter {
+  max-width: 754px;
+}
 .library-primary__filterGroup {
   border: 1px solid #145062;
   border-radius: 999px;
@@ -2721,6 +2724,35 @@ img {
 }
 .library-primary__filterBtn {
   width: 200px;
+}
+.library-primary__picture .section-senary__large {
+  border-bottom: 1px solid #b29966;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+.library-primary__video {
+  margin-top: 100px;
+  max-width: 100%;
+}
+.library-primary__video .swiper-slide {
+  opacity: 0.3;
+}
+.library-primary__video .swiper-slide.swiper-slide-active {
+  opacity: 1;
+}
+
+.article-img .coating {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.article-img .video-play {
+  width: 76px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .detail-primary {

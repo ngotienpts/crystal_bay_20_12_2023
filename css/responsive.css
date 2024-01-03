@@ -5,7 +5,6 @@
     grid-template-columns: 300px 1fr;
     gap: 20px;
   }
-
   .side-primary {
     position: relative !important;
     left: auto;
@@ -31,31 +30,25 @@
   .d-xl-none {
     display: none;
   }
-
   .d-xl-block {
     display: block;
   }
-
   .d-xl-flex {
     display: flex;
   }
-
   .d-xl-grid {
     display: grid;
   }
-
   /*------------------------------------------------------------- header*/
   /*------------------------------------------------------------- index*/
   /*------------------------------------------------------------- cate*/
   .sidebar-container {
     display: block;
   }
-
   /*------------------------------------------------------------- product*/
   .product-primary {
     padding: 67px 20px;
   }
-
   /*------------------------------------------------------------- ban lanh dao*/
   .leadership-primary__rowTop img {
     width: 300px;
@@ -65,7 +58,6 @@
     width: 200px;
     height: 200px;
   }
-
   /*------------------------------------------------------------- contact*/
   .contact-primary__container {
     display: block;
@@ -79,7 +71,6 @@
   .contact-primary__right iframe {
     width: 100%;
   }
-
   /*------------------------------------------------------------- detail*/
   /*------------------------------------------------------------- footer*/
 }
@@ -87,19 +78,15 @@
   .d-lg-none {
     display: none;
   }
-
   .d-lg-block {
     display: block;
   }
-
   .d-lg-flex {
     display: flex;
   }
-
   .d-lg-grid {
     display: grid;
   }
-
   /*------------------------------------------------------------- header*/
   .header {
     padding: 16px 20px;
@@ -114,12 +101,10 @@
   .header.sticky .header-mb__centerLogo {
     height: 50px;
   }
-
   /*------------------------------------------------------------- index*/
   .section-page {
     display: none;
   }
-
   .section-primary {
     min-height: 50vh;
   }
@@ -150,7 +135,6 @@
     padding-left: 20px;
     padding-right: 20px;
   }
-
   .section-secondary {
     padding-left: 20px;
     padding-right: 20px;
@@ -162,12 +146,10 @@
     font-size: 80px;
     margin-top: -30px;
   }
-
   .section-tertiary__container {
     padding-left: 20px;
     padding-right: 20px;
   }
-
   .section-quaternary {
     padding-left: 20px;
     padding-right: 20px;
@@ -175,7 +157,6 @@
   .section-quaternary__rightImage {
     width: 250px;
   }
-
   .section-quinary {
     padding-left: 20px;
     padding-right: 20px;
@@ -190,7 +171,6 @@
 .section-quinary__container .swiper-rtl .swiper-button-next {
     right: 70px;
   }
-
   .section-senary {
     padding-left: 20px;
     padding-right: 20px;
@@ -204,13 +184,11 @@
     left: 10px;
     right: auto;
   }
-
   .section-slide .swiper-button-next,
 .section-slide .swiper-button-prev {
     width: 56px;
     height: 56px;
   }
-
   /*------------------------------------------------------------- cate*/
   /*------------------------------------------------------------- intro*/
   .intro-primary {
@@ -227,7 +205,6 @@
     width: 56px;
     height: 56px;
   }
-
   .intro-secondary {
     padding: 67px 20px;
   }
@@ -241,7 +218,6 @@
   .intro-secondary__left .image-wrapper-120 {
     padding-bottom: 40%;
   }
-
   .intro-tertiary {
     min-height: 50vh;
   }
@@ -253,11 +229,9 @@
     transform: translateX(-50%);
     max-width: 515px;
   }
-
   .intro-quaternary {
     padding: 64px 20px;
   }
-
   .intro-quinary {
     padding-left: 100px;
     padding-right: 100px;
@@ -272,17 +246,14 @@
     left: -70px;
     right: auto;
   }
-
   /*------------------------------------------------------------- member*/
   .member-primary {
     padding: 67px 20px;
   }
-
   /*------------------------------------------------------------- news*/
   .news-primary {
     padding: 67px 20px;
   }
-
   /*------------------------------------------------------------- hotel*/
   .hotel-primary {
     padding: 67px 20px;
@@ -290,18 +261,15 @@
   .hotel-primary__container {
     margin-bottom: 0;
   }
-
   /*------------------------------------------------------------- product*/
   .product-primary .article-bot .swiper-button-next,
 .product-primary .article-bot .swiper-rtl .swiper-button-prev {
     left: 70px;
   }
-
   /*------------------------------------------------------------- detail*/
   .detail-primary {
     padding: 67px 20px;
   }
-
   .news-other {
     padding-left: 20px;
     padding-right: 20px;
@@ -318,7 +286,6 @@
     padding-left: 70px;
     padding-right: 70px;
   }
-
   .detail-secondary__container .detail-title {
     font-size: 40px;
   }
@@ -335,7 +302,6 @@
     width: 100%;
     height: 500px;
   }
-
   /*------------------------------------------------------------- footer*/
   .footer-top {
     padding: 80px 20px 100px;
@@ -352,25 +318,20 @@
   .d-md-none {
     display: none;
   }
-
   .d-md-block {
     display: block;
   }
-
   .d-md-flex {
     display: flex;
   }
-
   .d-md-grid {
     display: grid;
   }
-
   /*------------------------------------------------------------- header*/
   /*------------------------------------------------------------- index*/
   .heading-primary {
     font-size: 48px;
   }
-
   .section-primary-contentText-inner {
     width: 90%;
     margin: auto;
@@ -383,7 +344,6 @@
     margin-top: -35px;
     margin-left: 30px;
   }
-
   .section-secondary {
     padding: 30px 15px;
   }
@@ -410,7 +370,6 @@
   .section-secondary__right .image-wrapper-150 {
     padding-bottom: 60%;
   }
-
   .section-tertiary__heading {
     padding: 52px 0;
   }
@@ -427,7 +386,6 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
   }
-
   .section-quaternary {
     padding: 20px;
   }
@@ -440,11 +398,12 @@
   .section-quaternary__rightImage {
     width: 200px;
   }
-
   .section-senary .pane-video .video-play {
     width: 56px;
   }
-
+  .article .video-play {
+    width: 56px;
+  }
   /*------------------------------------------------------------- cate*/
   /*------------------------------------------------------------- hotel*/
   .hotel-primary__container .article {
@@ -459,7 +418,6 @@
   .hotel-primary__container .article-content {
     padding: 10px 0 0;
   }
-
   /*------------------------------------------------------------- product*/
   .product-primary .article-bot {
     flex-direction: column;
@@ -488,7 +446,6 @@
   .product-primary .article + .article {
     margin-top: 60px;
   }
-
   /*------------------------------------------------------------- ban lanh dao*/
   .leadership-primary__rowTop img {
     width: 200px;
@@ -498,12 +455,10 @@
     width: 150px;
     height: 150px;
   }
-
   /*------------------------------------------------------------- contact*/
   .contact-primary__right iframe {
     height: 500px;
   }
-
   /*------------------------------------------------------------- detail*/
   /*------------------------------------------------------------- footer*/
 }
@@ -511,33 +466,26 @@
   .d-sm-none {
     display: none;
   }
-
   .d-sm-block {
     display: block;
   }
-
   .d-sm-flex {
     display: flex;
   }
-
   .d-sm-grid {
     display: grid;
   }
-
   /*------------------------------------------------------------- header*/
   .header.sticky .header-mb__centerLogo {
     height: 40px;
   }
-
   .header-mb__centerLogo {
     height: 64px;
   }
-
   /*------------------------------------------------------------- index*/
   .heading-primary {
     font-size: 32px;
   }
-
   .section-slide .swiper-button-next,
 .section-slide .swiper-button-prev {
     width: 36px;
@@ -547,11 +495,9 @@
 .section-slide .swiper-button-prev:after {
     font-size: 14px;
   }
-
   .section-primary-slideTitle {
     font-size: 15px;
   }
-
   .section-tertiary {
     padding-bottom: 40px;
   }
@@ -574,7 +520,6 @@
     padding-left: 15px;
     padding-right: 15px;
   }
-
   .section-quaternary {
     padding: 15px;
   }
@@ -588,7 +533,6 @@
     margin-top: 30px;
     text-align: center;
   }
-
   .section-quinary {
     padding-left: 15px;
     padding-right: 15px;
@@ -612,7 +556,6 @@
   .section-quinary__slideTitle {
     font-size: 15px;
   }
-
   .section-senary {
     padding-left: 15px;
     padding-right: 15px;
@@ -649,7 +592,9 @@
 .section-senary .swiper-rtl .swiper-button-next {
     left: -10px;
   }
-
+  .article .video-play {
+    width: 32px;
+  }
   /*------------------------------------------------------------- cate*/
   /*------------------------------------------------------------- intro*/
   .intro-primary {
@@ -673,7 +618,6 @@
   .intro-primary__prev img {
     height: 16px;
   }
-
   .intro-secondary {
     padding: 56px 15px;
   }
@@ -694,7 +638,6 @@
   .intro-secondary__des {
     grid-template-columns: 1fr;
   }
-
   .intro-tertiary {
     min-height: 70vh;
   }
@@ -709,14 +652,12 @@
   .intro-tertiary__quote {
     font-size: 24px;
   }
-
   .intro-quaternary {
     padding-bottom: 20px;
   }
   .intro-quaternary__list {
     margin-top: 30px;
   }
-
   .intro-quinary {
     padding-left: 15px;
     padding-right: 15px;
@@ -738,12 +679,10 @@
 .intro-quinary .swiper-rtl .swiper-button-next {
     left: -10px;
   }
-
   /*------------------------------------------------------------- news*/
   .news-primary {
     padding: 56px 15px;
   }
-
   .news-primary .articles {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 24px 12px;
@@ -761,7 +700,6 @@
   .news-primary .article .article-content {
     margin-top: 10px;
   }
-
   /*------------------------------------------------------------- member*/
   .member-primary {
     padding: 56px 15px;
@@ -769,14 +707,12 @@
   .member-primary__tabItem {
     font-size: 12px;
   }
-
   .table-primary .table-colum {
     display: block;
     width: 100%;
     margin-bottom: 5px;
     text-align: left;
   }
-
   /*------------------------------------------------------------- hotel*/
   .hotel-primary {
     padding: 56px 15px;
@@ -784,11 +720,9 @@
   .hotel-primary__container .articles {
     grid-template-columns: 1fr;
   }
-
   .side-primary__form {
     display: block;
   }
-
   /*------------------------------------------------------------- product*/
   .product-primary {
     padding: 56px 15px;
@@ -811,7 +745,6 @@
   .product-primary .article + .article {
     margin-top: 30px;
   }
-
   /*------------------------------------------------------------- ban lanh dao*/
   .leadership-primary__and {
     font-size: 99px;
@@ -853,7 +786,6 @@
   .leadership-primary__rowBot .article-des {
     font-size: 15px;
   }
-
   /*------------------------------------------------------------- contact*/
   .contact-primary {
     padding: 56px 15px;
@@ -861,7 +793,54 @@
   .contact-primary__right iframe {
     height: 400px;
   }
-
+  /*------------------------------------------------------------- library*/
+  .library-primary .section-senary__large {
+    display: block;
+  }
+  .library-primary__slideLarge {
+    width: 100%;
+  }
+  .library-primary__contentLarge {
+    padding-top: 10px;
+    padding-left: 0;
+  }
+  .library-primary__picture .section-senary__large {
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+  }
+  .library-primary__filter {
+    flex-direction: column;
+    max-width: 100%;
+    gap: 10px;
+  }
+  .library-primary__filterBtn {
+    width: 100%;
+  }
+  .library-primary__filterGroup .library-primary__filterSelect {
+    height: 40px;
+  }
+  .library-primary__video {
+    margin-top: 50px;
+  }
+  .library-primary__video .article-content {
+    margin-top: 50px;
+  }
+  .library-primary__video .article-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .library-primary__video .swiper-button-next,
+.library-primary__video .swiper-rtl .swiper-button-prev {
+    right: auto;
+    left: 40px;
+    top: 51%;
+  }
+  .library-primary__video .swiper-button-prev,
+.library-primary__video .swiper-rtl .swiper-button-next {
+    left: 0;
+    top: 51%;
+    right: auto;
+  }
   /*------------------------------------------------------------- detail*/
   .detail-primary {
     padding: 56px 15px;
@@ -869,7 +848,6 @@
   .detail-primary .detail-title {
     font-size: 32px;
   }
-
   .news-other__slide {
     padding-left: 0;
     padding-right: 0;
@@ -883,7 +861,6 @@
 .news-other__slide .swiper-rtl .swiper-button-prev {
     right: -10px;
   }
-
   .detail-secondary__container .member-primary__tabItem {
     font-size: 10px;
   }
@@ -899,7 +876,6 @@
   .detail-secondary__listBooking {
     gap: 10px;
   }
-
   /*------------------------------------------------------------- footer*/
   .footer-top {
     padding: 40px 15px;

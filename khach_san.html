@@ -294,28 +294,61 @@
                                             <input type="text" placeholder="Tìm tên khách sạn" class="side-primary__input">
                                         </div>
                                         <div class="side-primary__group mb-15">
-                                            <select class="side-primary__select w-full fs-15">
-                                                <option value="">Quốc gia</option>
-                                                <option value="">Hà Nội</option>
-                                                <option value="">Đà Nẵng</option>
-                                                <option value="">Hải Phòng</option>
-                                            </select>
+                                            <label class="select" for="slct">
+                                                <select id="slct" required="required" class="w-full fs-15">
+                                                  <option value="" disabled="disabled" selected="selected">Quốc gia</option>
+                                                  <option value="#">Hà Nội</option>
+                                                  <option value="#">Đà Nẵng</option>
+                                                  <option value="#">Hải Phòng</option>
+                                                </select>
+                                                <svg>
+                                                  <use xlink:href="#select-arrow-down"></use>
+                                                </svg>
+                                            </label>
+                                            <!-- SVG Sprites-->
+                                            <svg class="sprites">
+                                                <symbol id="select-arrow-down" viewbox="0 0 10 6">
+                                                    <polyline points="1 1 5 5 9 1"></polyline>
+                                                </symbol>
+                                            </svg>
                                         </div>
                                         <div class="side-primary__group mb-15">
-                                            <select class="side-primary__select w-full fs-15">
-                                                <option value="">Tỉnh thành</option>
-                                                <option value="">Hà Nội</option>
-                                                <option value="">Đà Nẵng</option>
-                                                <option value="">Hải Phòng</option>
-                                            </select>
+                                            <label class="select" for="slct">
+                                                <select id="slct" required="required" class="w-full fs-15">
+                                                  <option value="" disabled="disabled" selected="selected">Tỉnh thành</option>
+                                                  <option value="#">Hà Nội</option>
+                                                  <option value="#">Đà Nẵng</option>
+                                                  <option value="#">Hải Phòng</option>
+                                                </select>
+                                                <svg>
+                                                  <use xlink:href="#select-arrow-down"></use>
+                                                </svg>
+                                            </label>
+                                            <!-- SVG Sprites-->
+                                            <svg class="sprites">
+                                                <symbol id="select-arrow-down" viewbox="0 0 10 6">
+                                                    <polyline points="1 1 5 5 9 1"></polyline>
+                                                </symbol>
+                                            </svg>
                                         </div>
                                         <div class="side-primary__group mb-15">
-                                            <select class="side-primary__select w-full fs-15">
-                                                <option value="">Số sao</option>
-                                                <option value="">Hà Nội</option>
-                                                <option value="">Đà Nẵng</option>
-                                                <option value="">Hải Phòng</option>
-                                            </select>
+                                            <label class="select" for="slct">
+                                                <select id="slct" required="required" class="w-full fs-15">
+                                                  <option value="" disabled="disabled" selected="selected">Số sao</option>
+                                                  <option value="#">5 sao</option>
+                                                  <option value="#">4 sao</option>
+                                                  <option value="#">3 sao</option>
+                                                </select>
+                                                <svg>
+                                                  <use xlink:href="#select-arrow-down"></use>
+                                                </svg>
+                                            </label>
+                                            <!-- SVG Sprites-->
+                                            <svg class="sprites">
+                                                <symbol id="select-arrow-down" viewbox="0 0 10 6">
+                                                    <polyline points="1 1 5 5 9 1"></polyline>
+                                                </symbol>
+                                            </svg>
                                         </div>
                                             <button class="side-primary__btn btn--primary d-2xl-flex items-center justify-center w-full">
                                                 <span>Tìm kiếm</span>

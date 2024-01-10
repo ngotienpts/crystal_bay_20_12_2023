@@ -2972,6 +2972,58 @@ img {
   flex-wrap: wrap;
 }
 
+.side-primary__group .select {
+  position: relative;
+}
+.side-primary__group .select svg {
+  position: absolute;
+  right: 12px;
+  top: calc(50% - 3px);
+  width: 10px;
+  height: 6px;
+  stroke-width: 2px;
+  stroke: #9098a9;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  pointer-events: none;
+}
+.side-primary__group .select select {
+  height: 100%;
+  -webkit-appearance: none;
+  padding: 0 20px;
+  width: 100%;
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 150ms ease;
+  font-size: 15px;
+}
+.side-primary__group .select select:required:invalid {
+  color: #1f1f1f;
+}
+.side-primary__group .select select option {
+  color: #223254;
+}
+.side-primary__group .select select option[value=""][disabled] {
+  display: none;
+}
+.side-primary__group .select select:focus {
+  outline: none;
+}
+.side-primary__group .select select:hover + svg {
+  stroke: #b29966;
+}
+.side-primary__group .sprites {
+  position: absolute;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  user-select: none;
+}
+
 .footer-top {
   padding: 100px 0 180px 0;
 }

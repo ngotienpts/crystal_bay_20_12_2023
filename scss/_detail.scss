@@ -139,7 +139,23 @@
 
     &__paneOne {
         .articles {
-            grid-gap: 30px 50px;
+            row-gap: 30px;
+            column-gap: 50px;
+            flex-wrap: wrap;
+        }
+        .article {
+            width: calc(50% - 25px);
+            .swiper-pagination-bullet {
+                width: 1rem;
+                height: 0.25rem;
+                border-radius: 0;
+            }
+            .swiper-pagination-bullet-active {
+                background: #fff;
+            }
+            .swiper-pagination-bullet {
+                background: #fff;
+            }
         }
         ul {
             padding-left: 20px;

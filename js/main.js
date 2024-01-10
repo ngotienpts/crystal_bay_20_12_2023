@@ -33,6 +33,9 @@ document.addEventListener("DOMContentLoaded", function () {
         ".js__swiperGalleryContainerVideo"
     );
     var oneSlides = document.querySelectorAll(".js__swiperOneContainer");
+    var oneSlidesSecondary = document.querySelectorAll(
+        ".js__swiperOneSecondaryContainer"
+    );
     var oneCardSlides = document.querySelectorAll(
         ".js__swiperOneCardContainer"
     );
@@ -166,6 +169,21 @@ document.addEventListener("DOMContentLoaded", function () {
                     navigation: {
                         nextEl: next || null,
                         prevEl: prev || null,
+                    },
+                });
+            });
+        },
+        // slider one secondary
+        sliderOneItemsSecondary: function () {
+            oneSlidesSecondary.forEach((item) => {
+                var slider = item.querySelector(".js__swiperItems");
+                var pagi = item.querySelector(".swiper-pagination");
+                new Swiper(slider, {
+                    slidesPerView: 1,
+                    spaceBetween: 18,
+                    slidesPerGroup: 1,
+                    pagination: {
+                        el: pagi || null,
                     },
                 });
             });
@@ -478,6 +496,8 @@ document.addEventListener("DOMContentLoaded", function () {
             this.fancybox();
             // slider one
             this.sliderOneItems();
+            // slider one secondary
+            this.sliderOneItemsSecondary();
             // slider one card
             this.sliderOneCardItems();
             // slider video library

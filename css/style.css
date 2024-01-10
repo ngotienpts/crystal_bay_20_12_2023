@@ -2935,7 +2935,23 @@ img {
   margin-top: 70px;
 }
 .detail-secondary__paneOne .articles {
-  grid-gap: 30px 50px;
+  row-gap: 30px;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+.detail-secondary__paneOne .article {
+  width: calc(50% - 25px);
+}
+.detail-secondary__paneOne .article .swiper-pagination-bullet {
+  width: 1rem;
+  height: 0.25rem;
+  border-radius: 0;
+}
+.detail-secondary__paneOne .article .swiper-pagination-bullet-active {
+  background: #fff;
+}
+.detail-secondary__paneOne .article .swiper-pagination-bullet {
+  background: #fff;
 }
 .detail-secondary__paneOne ul {
   padding-left: 20px;

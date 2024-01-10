@@ -330,7 +330,10 @@
         }
         &__paneOne {
             .articles {
-                grid-gap: 20px;
+                column-gap: 30px;
+            }
+            .article {
+                width: calc(50% - 15px);
             }
             .article-content {
                 padding-top: 15px;
@@ -1000,7 +1003,10 @@
         }
         &__paneOne {
             .articles {
-                grid-template-columns: 1fr;
+                column-gap: 0;
+            }
+            .article {
+                width: 100%;
             }
         }
         &__paneThree {

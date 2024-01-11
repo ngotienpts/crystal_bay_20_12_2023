@@ -3,10 +3,7 @@
     .detail-timePublic {
         opacity: 0.5;
     }
-    &__container {
-        max-width: 100%;
-        overflow: hidden;
-    }
+
     .detail-content {
         figure img {
             border-radius: 15px;
@@ -130,6 +127,9 @@
 
 .detail-secondary {
     &__container {
+        max-width: 100%;
+        overflow: hidden;
+
         .detail-title {
             font-size: 50px;
         }

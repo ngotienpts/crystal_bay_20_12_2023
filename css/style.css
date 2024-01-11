@@ -2809,10 +2809,6 @@ img {
 .detail-primary .detail-timePublic {
   opacity: 0.5;
 }
-.detail-primary__container {
-  max-width: 100%;
-  overflow: hidden;
-}
 .detail-primary .detail-content figure img {
   border-radius: 15px;
   overflow: hidden;
@@ -2929,6 +2925,10 @@ img {
   top: 30%;
 }
 
+.detail-secondary__container {
+  max-width: 100%;
+  overflow: hidden;
+}
 .detail-secondary__container .detail-title {
   font-size: 50px;
 }
